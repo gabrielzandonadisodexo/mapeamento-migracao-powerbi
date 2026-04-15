@@ -1,0 +1,417 @@
+{
+  "generatedAt": "2026-04-15T18:03:02.081Z",
+  "summary": {
+    "paineis": 167,
+    "linhas": 1711,
+    "fontes": 394,
+    "tabelas": 188,
+    "tabelasPreenchidas": 1668,
+    "erros": 33,
+    "linhasSemTabela": 43,
+    "coberturaTabelaPct": 97.5,
+    "relatoriosComPendencia": 43,
+    "fontesComPendencia": 43
+  },
+  "charts": {
+    "status": [
+      {
+        "name": "Mapeado",
+        "value": 1668
+      },
+      {
+        "name": "Erro no workbook",
+        "value": 33
+      },
+      {
+        "name": "Sem tabela identificada",
+        "value": 9
+      },
+      {
+        "name": "Sem datasource",
+        "value": 1
+      }
+    ],
+    "topSchemas": [
+      {
+        "name": "Sem schema",
+        "value": 1337
+      },
+      {
+        "name": "bicompras",
+        "value": 43
+      },
+      {
+        "name": "PORTALBI",
+        "value": 40
+      },
+      {
+        "name": "BICOMPRAS",
+        "value": 39
+      },
+      {
+        "name": "DPESSOAL",
+        "value": 34
+      },
+      {
+        "name": "NL",
+        "value": 32
+      },
+      {
+        "name": "BITABLEAU",
+        "value": 24
+      },
+      {
+        "name": "ciscorp",
+        "value": 23
+      },
+      {
+        "name": "bisilver",
+        "value": 17
+      },
+      {
+        "name": "dpessoal",
+        "value": 17
+      },
+      {
+        "name": "portalbi",
+        "value": 17
+      },
+      {
+        "name": "BISTGBRONZE",
+        "value": 8
+      }
+    ],
+    "topTables": [
+      {
+        "name": "USUARIO",
+        "value": 157
+      },
+      {
+        "name": "USUARIO_FILIAL",
+        "value": 157
+      },
+      {
+        "name": "FILIAL_COMPLEMENTO",
+        "value": 143
+      },
+      {
+        "name": "VW_FILIAL",
+        "value": 91
+      },
+      {
+        "name": "BI_FEC_CONTABIL_LINHA",
+        "value": 89
+      },
+      {
+        "name": "VW_D_FILIAL",
+        "value": 46
+      },
+      {
+        "name": "BICOMPRAS.d_filial_complemento@SDXLOGIS",
+        "value": 31
+      },
+      {
+        "name": "f_xml_item",
+        "value": 31
+      },
+      {
+        "name": "Planilha1",
+        "value": 29
+      },
+      {
+        "name": "F_XMLNF_HEADER",
+        "value": 24
+      },
+      {
+        "name": "BI_FEC_CONTABIL_CONTA",
+        "value": 23
+      },
+      {
+        "name": "ciscorp.filial",
+        "value": 23
+      }
+    ],
+    "topReportsByLines": [
+      {
+        "relatorio": "Vendas FY25",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/VendasFY25V3_17485411362870/Relatriodevendas",
+        "linhas": 97,
+        "fontes": 10,
+        "tabelas": 12,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Vendas FY26",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/VendasFY26/RealizadoClientes",
+        "linhas": 57,
+        "fontes": 10,
+        "tabelas": 7,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Base ordem de compras consumo",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Baseordemdecompras_16860831706610/Baseordemdecompras",
+        "linhas": 47,
+        "fontes": 7,
+        "tabelas": 27,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Resultado financeiro - Grupo econômico análise pessoal %",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Resultadofinanceiro-Grupoeconmicoanlisepessoal_17392198009060/Anlisepessoalporservio",
+        "linhas": 47,
+        "fontes": 9,
+        "tabelas": 18,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Base ordem de compras",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Baseordemdecompras_16860831929220/Baseordemdecompras",
+        "linhas": 42,
+        "fontes": 7,
+        "tabelas": 26,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Base ordem de compras completa",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Baseordemdecomprascompleta/Baseordemdecompras",
+        "linhas": 42,
+        "fontes": 7,
+        "tabelas": 26,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Custo Target",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Target_17115510333040/Custotarget",
+        "linhas": 42,
+        "fontes": 6,
+        "tabelas": 15,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Resultado financeiro - conta a conta por cl",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Resultadofinanceiro-contaacontaporcl/9-ContaacontaSAP",
+        "linhas": 39,
+        "fontes": 7,
+        "tabelas": 20,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Resultado financeiro - Grupo econômico",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Resultadofinanceiro-Grupoeconmico/2-FateGPSAP",
+        "linhas": 39,
+        "fontes": 7,
+        "tabelas": 20,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Retenção FY25",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/RetenoFY25/KPIReteno",
+        "linhas": 39,
+        "fontes": 7,
+        "tabelas": 7,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Resultado financeiro - SG&A",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Resultadofinanceiro-Grupoeconmico_17320354393150/Colaboradoresativoseafastados",
+        "linhas": 37,
+        "fontes": 7,
+        "tabelas": 19,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Resultado financeiro - Trimestre",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Resultadofinanceiro-Trimestre/ResultadoSAPFateGP",
+        "linhas": 37,
+        "fontes": 7,
+        "tabelas": 19,
+        "pendencias": 0
+      }
+    ],
+    "topDatasourcesByLines": [
+      {
+        "datasource": "Varredura - XML NF Header",
+        "relatorio": "FISCAL05 - Painel Gestão do Desconhecimento",
+        "linhas": 17,
+        "tabelas": 17,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Varredura - XML NF Header",
+        "relatorio": "Painel XML informação XPED",
+        "linhas": 17,
+        "tabelas": 17,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Varredura - XML NF Header",
+        "relatorio": "Painel XML informação XPED-Indicadores",
+        "linhas": 17,
+        "tabelas": 17,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Varredura - XML NF Header",
+        "relatorio": "FISCAL01 - Painel de Erro Rotina de Envio Ciência Automática",
+        "linhas": 17,
+        "tabelas": 17,
+        "pendencias": 0
+      },
+      {
+        "datasource": "BICOMPRAS - Valor Ordem Compra Prevista - Detalhada por Fornecedor",
+        "relatorio": "Base ordem de compras completa",
+        "linhas": 16,
+        "tabelas": 16,
+        "pendencias": 0
+      },
+      {
+        "datasource": "BICOMPRAS - Valor Ordem Compra Prevista - Detalhada por Fornecedor",
+        "relatorio": "Base ordem de compras",
+        "linhas": 16,
+        "tabelas": 16,
+        "pendencias": 0
+      },
+      {
+        "datasource": "BICOMPRAS - Valor Ordem Compra Prevista - Detalhada por Fornecedor",
+        "relatorio": "Base ordem de compras consumo",
+        "linhas": 16,
+        "tabelas": 16,
+        "pendencias": 0
+      },
+      {
+        "datasource": "União de linhas (Razão consumo)",
+        "relatorio": "PIS/COFINS sobre NF",
+        "linhas": 12,
+        "tabelas": 12,
+        "pendencias": 0
+      },
+      {
+        "datasource": "LY (Budget anualizado vendas)",
+        "relatorio": "Vendas FY25",
+        "linhas": 11,
+        "tabelas": 11,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Meta de vendas (Budget anualizado vendas)",
+        "relatorio": "Vendas FY25",
+        "linhas": 11,
+        "tabelas": 11,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Meta de vendas (Novas vendas Tableau)",
+        "relatorio": "Vendas FY25",
+        "linhas": 11,
+        "tabelas": 11,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Planilha1 (Novas vendas Tableau)",
+        "relatorio": "Vendas FY25",
+        "linhas": 11,
+        "tabelas": 11,
+        "pendencias": 0
+      }
+    ],
+    "reportsWithIssues": [
+      {
+        "relatorio": "ADH07 - CD-PAP",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ADH07-CD-PAP/ADH7-CD-PAP",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Análise de Estorno",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisedeEstorno/Estorno",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Análise de resultado - Mapa Cidade",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Anlisederesultado-MapaCidade/Anlisedefaturamento-mapa",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Análise NR Evento",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnliseNREvento/AnliseNREvento",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Análise Prévia Consumo Dezembro 2025",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisePrviaConsumoDezembro2025/AnlisePrviadoConsumo",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Análise Prévia Consumo Janeiro 2025",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisePrviaConsumoJaneiro2025/AnlisePrviadoConsumo",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Análise Prévia Consumo Janeiro 2026",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisePrviaConsumoJaneiro2025/AnlisePrviadoConsumo",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Análise Prévia Consumo Média PAP - Dezembro 25",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisePrviaConsumoMdiaPAP-Dezembro25/Anliseprviaconsumo",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Análise Prévia Consumo Média PAP - Janeiro 26",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisePrviaConsumoMdiaPAP-Janeiro26/Anliseprviaconsumo",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Análise Prévia Consumo Média PAP - Novembro 25",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisePrviaConsumoMdiaPAP-Novembro25/Anliseprviaconsumo",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Análise Prévia Consumo Média PAP - Outubro 25",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisePrviaConsumoMdiaPAP-Outubro25/Anliseprviaconsumo",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Análise Prévia Consumo Novembro 2025",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisePrviaConsumoNovembro2025/AnlisePrviadoConsumo",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      }
+    ]
+  }
+}

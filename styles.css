@@ -368,6 +368,234 @@ figcaption {
   color: var(--muted);
 }
 
+.intro.compact {
+  min-height: 0;
+}
+
+.chart-layout {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 22px;
+}
+
+.chart-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  min-width: 0;
+  padding: 24px;
+}
+
+.bar-list {
+  display: grid;
+  gap: 14px;
+}
+
+.bar-row {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+.bar-meta {
+  align-items: start;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.bar-label {
+  color: var(--ink);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.bar-value {
+  color: var(--sodexo-blue);
+  flex: 0 0 auto;
+  font-size: 14px;
+}
+
+.bar-track {
+  background: #e7ebf2;
+  border-radius: 999px;
+  height: 9px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  background: var(--sodexo-blue-2);
+  display: block;
+  height: 100%;
+}
+
+.bar-fill.is-ok,
+.status-pill.is-ok {
+  background: #2e7d32;
+}
+
+.bar-fill.is-warning,
+.status-pill.is-warning {
+  background: #b36b00;
+}
+
+.bar-fill.is-error,
+.status-pill.is-error {
+  background: var(--sodexo-red);
+}
+
+.bar-fill.is-review,
+.status-pill.is-review {
+  background: var(--sodexo-blue-2);
+}
+
+.empty-state,
+.empty-cell,
+.muted-note {
+  color: var(--muted);
+}
+
+.filters {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1.35fr repeat(3, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.filters label {
+  color: var(--sodexo-blue);
+  display: grid;
+  font-size: 13px;
+  font-weight: 700;
+  gap: 7px;
+}
+
+.filters input,
+.filters select {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font: inherit;
+  min-height: 42px;
+  min-width: 0;
+  padding: 9px 11px;
+  width: 100%;
+}
+
+.filters input:focus,
+.filters select:focus {
+  border-color: var(--sodexo-blue-2);
+  outline: 2px solid rgba(0, 59, 122, 0.16);
+}
+
+.detail-actions {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  margin: 22px 0 14px;
+}
+
+.detail-actions span,
+.pagination span {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.table-shell {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow-x: auto;
+  width: 100%;
+}
+
+.data-table {
+  background: #ffffff;
+  border-collapse: collapse;
+  min-width: 980px;
+  width: 100%;
+}
+
+.compact-table {
+  min-width: 720px;
+}
+
+.data-table th,
+.data-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table th {
+  background: var(--soft-blue);
+  color: var(--sodexo-blue);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.data-table td {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.data-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.data-table a {
+  color: var(--sodexo-blue-2);
+  font-weight: 700;
+}
+
+.wide-cell {
+  min-width: 220px;
+}
+
+.status-pill {
+  border-radius: 999px;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 5px 8px;
+  white-space: nowrap;
+}
+
+.pagination {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.button.small {
+  font-size: 13px;
+  margin-top: 0;
+  min-height: 34px;
+  padding: 7px 11px;
+}
+
+.button:disabled,
+.button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+code {
+  background: var(--soft-blue);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--sodexo-blue);
+  padding: 1px 4px;
+}
+
 @media (max-width: 920px) {
   .sidebar {
     border-bottom: 4px solid var(--sodexo-red);
@@ -396,8 +624,16 @@ figcaption {
 
   .metrics,
   .download-grid,
-  .review-list {
+  .review-list,
+  .chart-layout,
+  .filters {
     grid-template-columns: 1fr;
+  }
+
+  .detail-actions,
+  .pagination {
+    align-items: stretch;
+    flex-direction: column;
   }
 }
 

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analytical | Mapeamento de Dashboards de Finanças</title>
+  <link rel="stylesheet" href="./styles.css?v=20260415-pages">
+</head>
+<body data-page="analytical">
+  <aside class="sidebar" aria-label="Menu principal">
+    <div class="brand">
+      <span class="brand-mark">sodexo</span>
+      <div>
+        <strong>Finanças</strong>
+        <span>Origem dos dados</span>
+      </div>
+    </div>
+
+    <nav>
+      <a class="nav-item" href="./index.html">Resumo</a>
+      <a class="nav-item active" href="./analytical.html">Analytical</a>
+      <a class="nav-item" href="./detailed.html">Detailed</a>
+      <a class="nav-item" href="./index.html#planilha">Planilha</a>
+      <a class="nav-item" href="./index.html#arquitetura">Arquitetura</a>
+      <a class="nav-item" href="./index.html#revisao">Revisão</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section class="intro compact" id="analytical">
+      <p class="eyebrow">Analytical | Output Automação</p>
+      <h1>Visão analítica das fontes e tabelas mapeadas</h1>
+      <p class="lead">
+        Indicadores e gráficos calculados a partir da planilha `output_automacao.xlsx`.
+      </p>
+
+      <div class="metrics analytics-metrics" aria-label="Indicadores analíticos">
+        <article class="metric">
+          <strong data-analytics="coberturaTabelaPct">--</strong>
+          <span>Linhas com tabela identificada</span>
+        </article>
+        <article class="metric">
+          <strong data-analytics="relatoriosComPendencia">--</strong>
+          <span>Relatórios com ponto de revisão</span>
+        </article>
+        <article class="metric">
+          <strong data-analytics="fontesComPendencia">--</strong>
+          <span>Fontes com ponto de revisão</span>
+        </article>
+        <article class="metric">
+          <strong data-analytics="linhasSemTabela">--</strong>
+          <span>Linhas sem tabela</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="chart-layout">
+      <article class="chart-card">
+        <div class="section-heading">
+          <p class="eyebrow">Cobertura</p>
+          <h2>Status do mapeamento</h2>
+        </div>
+        <div id="statusBars" class="bar-list"></div>
+      </article>
+
+      <article class="chart-card">
+        <div class="section-heading">
+          <p class="eyebrow">Schemas</p>
+          <h2>Top schemas por ocorrência</h2>
+        </div>
+        <div id="schemaBars" class="bar-list"></div>
+      </article>
+
+      <article class="chart-card">
+        <div class="section-heading">
+          <p class="eyebrow">Tabelas e views</p>
+          <h2>Top tabelas/views</h2>
+        </div>
+        <div id="tableBars" class="bar-list"></div>
+      </article>
+
+      <article class="chart-card">
+        <div class="section-heading">
+          <p class="eyebrow">Relatórios</p>
+          <h2>Relatórios com mais dependências</h2>
+        </div>
+        <div id="reportBars" class="bar-list"></div>
+      </article>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Priorização</p>
+        <h2>Principais pontos para revisão</h2>
+        <p>Relatórios ordenados pela quantidade de linhas que não ficaram totalmente mapeadas.</p>
+      </div>
+      <div class="table-shell">
+        <table class="data-table compact-table">
+          <thead>
+            <tr>
+              <th>Relatório</th>
+              <th>Pendências</th>
+              <th>Fontes</th>
+              <th>Tabelas</th>
+            </tr>
+          </thead>
+          <tbody id="issueTable"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="./app.js?v=20260415-pages"></script>
+</body>
+</html>
