@@ -1,0 +1,296 @@
+:root {
+  --ink: #1f2933;
+  --muted: #52606d;
+  --line: #d9e2ec;
+  --panel: #ffffff;
+  --page: #f7f9fb;
+  --accent: #0f766e;
+  --accent-strong: #115e59;
+  --accent-soft: #ccfbf1;
+  --gold: #a16207;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--page);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.sidebar {
+  background: #ffffff;
+  border-right: 1px solid var(--line);
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  left: 0;
+  padding: 24px 18px;
+  position: fixed;
+  top: 0;
+  width: 252px;
+  z-index: 10;
+}
+
+.brand {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.brand-mark {
+  align-items: center;
+  background: var(--accent);
+  border-radius: var(--radius);
+  color: #ffffff;
+  display: inline-flex;
+  font-weight: 700;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.brand strong,
+.brand span {
+  display: block;
+}
+
+.brand span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+nav {
+  display: grid;
+  gap: 8px;
+}
+
+.nav-item {
+  border-radius: var(--radius);
+  color: var(--muted);
+  font-weight: 700;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.content {
+  margin-left: 252px;
+  padding: 36px;
+}
+
+.intro,
+.section-block {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin: 0 0 24px;
+  padding: 28px;
+}
+
+.intro {
+  min-height: 380px;
+}
+
+.eyebrow {
+  color: var(--accent-strong);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 1.12;
+  margin-bottom: 16px;
+  max-width: 880px;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 820px;
+}
+
+.metrics,
+.download-grid,
+.review-list {
+  display: grid;
+  gap: 14px;
+}
+
+.metrics {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 30px;
+}
+
+.download-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.review-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.metric,
+.download-card,
+.review-list article {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.metric strong,
+.review-list strong {
+  color: var(--accent-strong);
+  display: block;
+  font-size: 32px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.metric span,
+.file-meta,
+figcaption,
+.review-list span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+  max-width: 760px;
+}
+
+.download-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 246px;
+  padding: 22px;
+}
+
+.file-type {
+  background: #fef3c7;
+  border-radius: 4px;
+  color: var(--gold);
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding: 4px 7px;
+}
+
+.download-card p {
+  color: var(--muted);
+}
+
+.button {
+  align-items: center;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  color: #ffffff;
+  display: inline-flex;
+  font: inherit;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: 22px;
+  min-height: 44px;
+  padding: 11px 14px;
+  width: fit-content;
+}
+
+.button.secondary {
+  background: #ffffff;
+  color: var(--accent-strong);
+}
+
+.button.disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+}
+
+.architecture {
+  margin: 0;
+}
+
+.architecture img {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: block;
+  height: auto;
+  max-width: 100%;
+  padding: 12px;
+}
+
+.architecture figcaption {
+  margin-top: 10px;
+}
+
+@media (max-width: 920px) {
+  .sidebar {
+    border-bottom: 1px solid var(--line);
+    border-right: 0;
+    bottom: auto;
+    position: sticky;
+    width: 100%;
+  }
+
+  nav {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .metrics,
+  .download-grid,
+  .review-list {
+    grid-template-columns: 1fr;
+  }
+}
