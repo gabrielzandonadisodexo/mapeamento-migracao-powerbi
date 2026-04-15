@@ -1,17 +1,17 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mapeamento de Dashboards de FinanÃ§as</title>
+  <title>Mapeamento de Dashboards de Finanças</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <aside class="sidebar" aria-label="Menu principal">
     <div class="brand">
-      <span class="brand-mark">F</span>
+      <span class="brand-mark">sodexo</span>
       <div>
-        <strong>FinanÃ§as</strong>
+        <strong>Finanças</strong>
         <span>Origem dos dados</span>
       </div>
     </div>
@@ -20,22 +20,22 @@
       <a class="nav-item active" href="#resumo">Resumo</a>
       <a class="nav-item" href="#planilha">Planilha</a>
       <a class="nav-item" href="#arquitetura">Arquitetura</a>
-      <a class="nav-item" href="#revisao">RevisÃ£o</a>
+      <a class="nav-item" href="#revisao">Revisão</a>
     </nav>
   </aside>
 
   <main class="content">
     <section class="intro" id="resumo">
-      <p class="eyebrow">Tableau | FinanÃ§as | Abril de 2026</p>
-      <h1>Mapeamento de fontes e tabelas dos dashboards de FinanÃ§as</h1>
+      <p class="eyebrow">Tableau | Finanças | Abril de 2026</p>
+      <h1>Mapeamento de fontes e tabelas dos dashboards de Finanças</h1>
       <p class="lead">
-        InventÃ¡rio consolidado para apoiar anÃ¡lise de origem dos dados, dependÃªncias dos relatÃ³rios e revisÃµes com POs e Ã¡reas de negÃ³cio.
+        Inventário consolidado para apoiar análise de origem dos dados, dependências dos relatórios e revisões com POs e áreas de negócio.
       </p>
 
-      <div class="metrics" aria-label="NÃºmeros da execuÃ§Ã£o">
+      <div class="metrics" aria-label="Números da execução">
         <article class="metric">
           <strong data-metric="paineis">167</strong>
-          <span>PainÃ©is processados</span>
+          <span>Painéis processados</span>
         </article>
         <article class="metric">
           <strong data-metric="fontes">394</strong>
@@ -55,8 +55,8 @@
     <section id="planilha" class="section-block">
       <div class="section-heading">
         <p class="eyebrow">Downloads</p>
-        <h2>Planilha e relatÃ³rio</h2>
-        <p>Arquivos finais gerados pela execuÃ§Ã£o completa do mapeamento.</p>
+        <h2>Planilha e relatório</h2>
+        <p>Arquivos finais gerados pela execução completa do mapeamento.</p>
       </div>
 
       <div class="download-grid">
@@ -64,7 +64,7 @@
           <div>
             <span class="file-type">XLSX</span>
             <h3>output_automacao.xlsx</h3>
-            <p>Base consolidada com relatÃ³rio, datasource, link, schema e tabela.</p>
+            <p>Base consolidada com relatório, datasource, link, schema e tabela.</p>
             <span class="file-meta" data-file="excel">Arquivo Excel</span>
           </div>
           <a class="button" href="./downloads/output_automacao.xlsx" download>Baixar planilha Excel</a>
@@ -73,11 +73,11 @@
         <article class="download-card">
           <div>
             <span class="file-type">PDF</span>
-            <h3>documentaÃ§Ã£o do mapeamento</h3>
-            <p>Resumo executivo, mÃ©todo usado, nÃºmeros finais e pontos de revisÃ£o.</p>
+            <h3>documentação do mapeamento</h3>
+            <p>Resumo executivo, método usado, números finais e pontos de revisão.</p>
             <span class="file-meta" data-file="pdf">Arquivo PDF</span>
           </div>
-          <a class="button secondary" href="./downloads/documentacao_mapeamento_dashboards_financas.pdf" download>Baixar relatÃ³rio PDF</a>
+          <a class="button secondary" href="./downloads/documentacao_mapeamento_dashboards_financas.pdf" download>Baixar relatório PDF</a>
         </article>
       </div>
     </section>
@@ -86,28 +86,28 @@
       <div class="section-heading">
         <p class="eyebrow">Fluxo</p>
         <h2>Como o mapeamento percorre os dados</h2>
-        <p>A automaÃ§Ã£o parte da lista de dashboards, navega no Tableau, lÃª as fontes e consolida a origem tÃ©cnica encontrada.</p>
+        <p>A automação parte da lista de dashboards, navega no Tableau, lê as fontes e consolida a origem técnica encontrada.</p>
       </div>
       <figure class="architecture">
-        <img src="./assets/arquitetura_automacao.png" alt="Fluxo da automaÃ§Ã£o de mapeamento de dashboards">
-        <figcaption>Fluxo usado como referÃªncia para a automaÃ§Ã£o.</figcaption>
+        <img src="./assets/arquitetura_automacao.png" alt="Fluxo da automação de mapeamento de dashboards">
+        <figcaption>Fluxo usado como referência para a automação.</figcaption>
       </figure>
     </section>
 
     <section id="revisao" class="section-block">
       <div class="section-heading">
-        <p class="eyebrow">Qualidade do inventÃ¡rio</p>
-        <h2>Pontos para revisÃ£o manual</h2>
+        <p class="eyebrow">Qualidade do inventário</p>
+        <h2>Pontos para revisão manual</h2>
       </div>
 
       <div class="review-list">
         <article>
           <strong>33</strong>
-          <span>PainÃ©is sem workbook localizado pelo Data Details</span>
+          <span>Painéis sem workbook localizado pelo Data Details</span>
         </article>
         <article>
           <strong>9</strong>
-          <span>Fontes sem Custom SQL ou tabela identificÃ¡vel</span>
+          <span>Fontes sem Custom SQL ou tabela identificável</span>
         </article>
         <article>
           <strong>1</strong>
@@ -120,4 +120,3 @@
   <script src="./app.js"></script>
 </body>
 </html>
-
