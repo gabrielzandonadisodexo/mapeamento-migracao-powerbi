@@ -316,10 +316,15 @@ async function renderDetailedPage() {
 
 function renderSimilarityCard(rows) {
   const model = buildSimilarityModel(rows);
+  const defaultBand = [...similarityBands]
+    .reverse()
+    .find((band) => (model.pairsByBand.get(band.id) || []).length > 0);
+  const defaultPair = defaultBand ? model.pairsByBand.get(defaultBand.id)?.[0] : null;
+
   similarityState = {
     model,
-    activeBandId: null,
-    activePairId: null
+    activeBandId: defaultBand?.id || null,
+    activePairId: defaultPair?.id || null
   };
 
   renderSimilarityBands();
@@ -460,8 +465,10 @@ function renderSimilarityBands() {
 
     button.append(label, description, count);
     button.addEventListener('click', () => {
-      similarityState.activeBandId = similarityState.activeBandId === band.id ? null : band.id;
-      similarityState.activePairId = null;
+      const nextBandId = similarityState.activeBandId === band.id ? null : band.id;
+      const nextPairs = nextBandId ? similarityState.model.pairsByBand.get(nextBandId) || [] : [];
+      similarityState.activeBandId = nextBandId;
+      similarityState.activePairId = nextPairs[0]?.id || null;
       renderSimilarityBands();
       renderSimilarityPanel();
     });
@@ -477,22 +484,13 @@ function renderSimilarityPanel() {
   if (!similarityState.activeBandId) {
     const hint = document.createElement('p');
     hint.className = 'similarity-hint';
-    hint.textContent = 'Clique em uma faixa para ver quais relatorios compartilham tabelas. Depois clique em um par para ver as tabelas em comum e as exclusivas de cada relatorio.';
+    hint.textContent = 'Selecione uma faixa para priorizar relatorios com tabelas parecidas e avaliar onde um mesmo mapeamento pode atender mais de um report.';
     panel.appendChild(hint);
     return;
   }
 
   const band = similarityBands.find((item) => item.id === similarityState.activeBandId);
   const pairs = similarityState.model.pairsByBand.get(similarityState.activeBandId) || [];
-
-  const heading = document.createElement('div');
-  heading.className = 'similarity-panel-heading';
-  const title = document.createElement('h3');
-  title.textContent = `Faixa ${band.label}`;
-  const subtitle = document.createElement('p');
-  subtitle.textContent = `${formatNumber(pairs.length)} pares de relatorios com pelo menos uma tabela em comum.`;
-  heading.append(title, subtitle);
-  panel.appendChild(heading);
 
   if (!pairs.length) {
     const empty = document.createElement('p');
@@ -502,83 +500,191 @@ function renderSimilarityPanel() {
     return;
   }
 
-  const list = document.createElement('div');
-  list.className = 'similarity-pair-list';
-
-  for (const pair of pairs) {
-    list.appendChild(createSimilarityPairNode(pair));
+  if (!pairs.some((pair) => pair.id === similarityState.activePairId)) {
+    similarityState.activePairId = pairs[0]?.id || null;
   }
 
-  panel.appendChild(list);
+  const activePair = pairs.find((pair) => pair.id === similarityState.activePairId) || pairs[0];
+  const workspace = document.createElement('div');
+  workspace.className = 'similarity-workspace';
+
+  const results = document.createElement('aside');
+  results.className = 'similarity-results';
+
+  const resultsHeader = document.createElement('div');
+  resultsHeader.className = 'similarity-results-header';
+
+  const title = document.createElement('h3');
+  title.textContent = `Faixa ${band.label}`;
+
+  const subtitle = document.createElement('p');
+  subtitle.textContent = `${formatNumber(pairs.length)} pares encontrados. Mostrando as melhores oportunidades por percentual e quantidade de tabelas em comum.`;
+
+  resultsHeader.append(title, subtitle);
+  results.appendChild(resultsHeader);
+
+  const list = document.createElement('div');
+  list.className = 'similarity-opportunity-list';
+
+  for (const pair of pairs.slice(0, 80)) {
+    list.appendChild(createSimilarityOpportunityNode(pair));
+  }
+
+  results.appendChild(list);
+  workspace.appendChild(results);
+  workspace.appendChild(createSimilarityInsightNode(activePair));
+  panel.appendChild(workspace);
 }
 
-function createSimilarityPairNode(pair) {
-  const item = document.createElement('article');
-  item.className = 'similarity-pair';
-
+function createSimilarityOpportunityNode(pair) {
   const toggle = document.createElement('button');
-  toggle.className = 'similarity-pair-toggle';
+  toggle.className = 'similarity-opportunity';
   toggle.type = 'button';
   toggle.dataset.pairId = pair.id;
-  toggle.setAttribute('aria-expanded', String(similarityState.activePairId === pair.id));
+  toggle.setAttribute('aria-pressed', String(similarityState.activePairId === pair.id));
+
+  const score = document.createElement('span');
+  score.className = 'similarity-opportunity-score';
+  score.textContent = formatPercent(pair.similarityPct);
 
   const reports = document.createElement('span');
-  reports.className = 'similarity-reports';
-  reports.textContent = `${pair.reportA.name} | ${pair.reportB.name}`;
+  reports.className = 'similarity-opportunity-reports';
 
-  const stats = document.createElement('span');
-  stats.className = 'similarity-stats';
-  stats.textContent = `${formatPercent(pair.similarityPct)} similares | ${formatNumber(pair.commonCount)} tabelas em comum`;
+  const reportA = document.createElement('strong');
+  reportA.textContent = pair.reportA.name;
+  const reportB = document.createElement('strong');
+  reportB.textContent = pair.reportB.name;
+  const separator = document.createElement('span');
+  separator.textContent = 'com';
+  reports.append(reportA, separator, reportB);
 
-  toggle.append(reports, stats);
+  const meta = document.createElement('span');
+  meta.className = 'similarity-opportunity-meta';
+  meta.textContent = `${formatNumber(pair.commonCount)} tabelas em comum`;
+
+  toggle.append(score, reports, meta);
   toggle.addEventListener('click', () => {
-    similarityState.activePairId = similarityState.activePairId === pair.id ? null : pair.id;
+    similarityState.activePairId = pair.id;
     renderSimilarityPanel();
   });
 
-  item.appendChild(toggle);
+  return toggle;
+}
 
-  if (similarityState.activePairId === pair.id) {
-    item.appendChild(createSimilarityDetailsNode(pair));
+function createSimilarityInsightNode(pair) {
+  const insight = document.createElement('section');
+  insight.className = 'similarity-insight';
+
+  const header = document.createElement('div');
+  header.className = 'similarity-insight-header';
+
+  const label = document.createElement('p');
+  label.className = 'eyebrow';
+  label.textContent = 'Par selecionado';
+
+  const title = document.createElement('h3');
+  title.textContent = 'Oportunidade de reaproveitamento';
+
+  const score = document.createElement('span');
+  score.className = 'similarity-score';
+  score.textContent = `${formatPercent(pair.similarityPct)} similares`;
+
+  header.append(label, title, score);
+
+  const compare = document.createElement('div');
+  compare.className = 'similarity-compare';
+  compare.appendChild(createReportBadge(pair.reportA.name, pair.reportA.tableKeys.length));
+
+  const connector = document.createElement('span');
+  connector.className = 'similarity-connector';
+  connector.textContent = 'compartilha';
+  compare.appendChild(connector);
+  compare.appendChild(createReportBadge(pair.reportB.name, pair.reportB.tableKeys.length));
+
+  const kpis = document.createElement('div');
+  kpis.className = 'similarity-kpis';
+  kpis.appendChild(createMiniKpi('Tabelas em comum', pair.commonCount));
+  kpis.appendChild(createMiniKpi('Exclusivas do primeiro', pair.onlyA.length));
+  kpis.appendChild(createMiniKpi('Exclusivas do segundo', pair.onlyB.length));
+
+  const common = document.createElement('div');
+  common.className = 'similarity-table-cloud';
+  const commonTitle = document.createElement('h4');
+  commonTitle.textContent = `Tabelas em comum (${formatNumber(pair.commonTables.length)})`;
+  const commonList = createChipList(pair.commonTables, 'Nenhuma tabela em comum.');
+  common.append(commonTitle, commonList);
+
+  const exclusive = document.createElement('div');
+  exclusive.className = 'similarity-exclusive';
+  if (!pair.onlyA.length && !pair.onlyB.length) {
+    const fullOverlap = document.createElement('p');
+    fullOverlap.className = 'similarity-full-overlap';
+    fullOverlap.textContent = 'Esses dois relatorios usam o mesmo conjunto de tabelas mapeadas nesta base.';
+    exclusive.appendChild(fullOverlap);
+  } else {
+    exclusive.appendChild(createCompactTableGroup(`Somente em ${pair.reportA.name}`, pair.onlyA));
+    exclusive.appendChild(createCompactTableGroup(`Somente em ${pair.reportB.name}`, pair.onlyB));
   }
 
-  return item;
+  insight.append(header, compare, kpis, common, exclusive);
+  return insight;
 }
 
-function createSimilarityDetailsNode(pair) {
-  const details = document.createElement('div');
-  details.className = 'similarity-details';
+function createReportBadge(name, tableCount) {
+  const badge = document.createElement('div');
+  badge.className = 'similarity-report-badge';
 
-  details.appendChild(createTableGroup('Tabelas em comum', pair.commonTables, 'is-common'));
-  details.appendChild(createTableGroup(`Somente em ${pair.reportA.name}`, pair.onlyA));
-  details.appendChild(createTableGroup(`Somente em ${pair.reportB.name}`, pair.onlyB));
+  const title = document.createElement('strong');
+  title.textContent = name;
 
-  return details;
+  const meta = document.createElement('span');
+  meta.textContent = `${formatNumber(tableCount)} tabelas mapeadas`;
+
+  badge.append(title, meta);
+  return badge;
 }
 
-function createTableGroup(title, tables, className = '') {
+function createMiniKpi(label, value) {
+  const kpi = document.createElement('article');
+  kpi.className = 'similarity-mini-kpi';
+
+  const number = document.createElement('strong');
+  number.textContent = formatNumber(value);
+
+  const text = document.createElement('span');
+  text.textContent = label;
+
+  kpi.append(number, text);
+  return kpi;
+}
+
+function createChipList(tables, emptyText) {
+  if (!tables.length) {
+    const empty = document.createElement('p');
+    empty.className = 'empty-state';
+    empty.textContent = emptyText;
+    return empty;
+  }
+
+  const list = document.createElement('div');
+  list.className = 'table-chip-list';
+  for (const table of tables) {
+    const chip = document.createElement('span');
+    chip.className = 'table-chip';
+    chip.textContent = table;
+    list.appendChild(chip);
+  }
+  return list;
+}
+
+function createCompactTableGroup(title, tables) {
   const group = document.createElement('div');
-  group.className = `similarity-table-group ${className}`.trim();
+  group.className = 'similarity-exclusive-group';
 
   const heading = document.createElement('h4');
   heading.textContent = `${title} (${formatNumber(tables.length)})`;
   group.appendChild(heading);
-
-  if (!tables.length) {
-    const empty = document.createElement('p');
-    empty.className = 'empty-state';
-    empty.textContent = 'Nenhuma tabela exclusiva.';
-    group.appendChild(empty);
-    return group;
-  }
-
-  const list = document.createElement('ul');
-  for (const table of tables) {
-    const item = document.createElement('li');
-    item.textContent = table;
-    list.appendChild(item);
-  }
-  group.appendChild(list);
+  group.appendChild(createChipList(tables, 'Nenhuma tabela exclusiva.'));
   return group;
 }
 
