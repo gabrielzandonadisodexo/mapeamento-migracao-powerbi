@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Detailed | Mapeamento de Dashboards de Finanças</title>
-  <link rel="stylesheet" href="./styles.css?v=20260415-pages">
+  <link rel="stylesheet" href="./styles.css?v=20260415-similarity">
 </head>
 <body data-page="detailed">
   <aside class="sidebar" aria-label="Menu principal">
@@ -52,6 +52,19 @@
           <span>Tabelas/views</span>
         </article>
       </div>
+    </section>
+
+    <section class="section-block similarity-section">
+      <div class="section-heading">
+        <p class="eyebrow">Agrupamento por tabelas</p>
+        <h2>Relatorios com tabelas parecidas</h2>
+        <p>
+          Agrupa pares de relatorios por percentual de tabelas em comum. A faixa verde indica os relatorios com maior potencial de reaproveitamento no mapeamento.
+        </p>
+      </div>
+
+      <div id="similarityBands" class="similarity-bands" aria-label="Faixas de similaridade"></div>
+      <div id="similarityPanel" class="similarity-panel" aria-live="polite"></div>
     </section>
 
     <section class="section-block">
@@ -108,6 +121,6 @@
     </section>
   </main>
 
-  <script src="./app.js?v=20260415-pages"></script>
+  <script src="./app.js?v=20260415-similarity"></script>
 </body>
 </html>
