@@ -3,15 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Analytical | Mapeamento de Dashboards de Finanças</title>
-  <link rel="stylesheet" href="./styles.css?v=20260415-no-sidebar-logo">
+  <title>Analytical | Mapeamento de Dashboards Tableau</title>
+  <link rel="stylesheet" href="./styles.css?v=20260424-segments">
 </head>
 <body data-page="analytical">
   <aside class="sidebar" aria-label="Menu principal">
     <div class="brand">
       <div>
-        <strong>Finanças</strong>
+        <strong id="brandName">Finance</strong>
       </div>
+    </div>
+
+    <div class="segment-switch" aria-label="Escolher segmento">
+      <a class="segment-chip" data-segment-link="finance" href="./analytical.html?segment=finance">Finance</a>
+      <a class="segment-chip" data-segment-link="hr" href="./analytical.html?segment=hr">HR</a>
     </div>
 
     <nav>
@@ -26,10 +31,10 @@
 
   <main class="content">
     <section class="intro compact" id="analytical">
-      <p class="eyebrow">Analytical | Output Automação</p>
-      <h1>Visão analítica das fontes e tabelas mapeadas</h1>
-      <p class="lead">
-        Indicadores e gráficos calculados a partir da planilha `output_automacao.xlsx`.
+      <p class="eyebrow" id="analyticalEyebrow">Analytical | Output Automação</p>
+      <h1 id="analyticalTitle">Visão analítica das fontes e tabelas mapeadas</h1>
+      <p class="lead" id="analyticalLead">
+        Indicadores e gráficos calculados a partir da planilha consolidada do segmento selecionado.
       </p>
 
       <div class="metrics analytics-metrics" aria-label="Indicadores analíticos">
@@ -108,6 +113,6 @@
     </section>
   </main>
 
-  <script src="./app.js?v=20260415-no-sidebar-logo"></script>
+  <script src="./app.js?v=20260424-segments"></script>
 </body>
 </html>

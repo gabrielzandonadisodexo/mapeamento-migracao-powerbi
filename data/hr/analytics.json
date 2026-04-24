@@ -1,0 +1,307 @@
+{
+  "generatedAt": "2026-04-24T20:18:52.979Z",
+  "summary": {
+    "paineis": 21,
+    "linhas": 370,
+    "fontes": 63,
+    "tabelas": 41,
+    "tabelasPreenchidas": 369,
+    "erros": 1,
+    "semDatasource": 0,
+    "semTabela": 0,
+    "linhasSemTabela": 1,
+    "coberturaTabelaPct": 99.7,
+    "relatoriosComPendencia": 1,
+    "fontesComPendencia": 1
+  },
+  "charts": {
+    "status": [
+      {
+        "name": "Mapeado",
+        "value": 369
+      },
+      {
+        "name": "Erro no workbook",
+        "value": 1
+      }
+    ],
+    "topSchemas": [
+      {
+        "name": "Sem schema",
+        "value": 232
+      },
+      {
+        "name": "DPESSOAL",
+        "value": 40
+      },
+      {
+        "name": "bicompras",
+        "value": 21
+      },
+      {
+        "name": "ciscorp",
+        "value": 19
+      },
+      {
+        "name": "portalbi",
+        "value": 19
+      },
+      {
+        "name": "bisilver",
+        "value": 17
+      },
+      {
+        "name": "dpessoal",
+        "value": 17
+      },
+      {
+        "name": "PORTALBI",
+        "value": 4
+      }
+    ],
+    "topTables": [
+      {
+        "name": "D_COLABORADOR",
+        "value": 30
+      },
+      {
+        "name": "D_COLABORADOR_NVL_CLR_COLUNAR",
+        "value": 26
+      },
+      {
+        "name": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
+        "value": 21
+      },
+      {
+        "name": "F_COLABORADOR_FOLHA",
+        "value": 21
+      },
+      {
+        "name": "F_COLABORADOR_FOLHA_SAL",
+        "value": 21
+      },
+      {
+        "name": "bicompras.d_filial",
+        "value": 19
+      },
+      {
+        "name": "ciscorp.filial",
+        "value": 19
+      },
+      {
+        "name": "portalbi.filial_complemento@tecnisaw",
+        "value": 19
+      },
+      {
+        "name": "bisilver.vw_estrutra_gerencial",
+        "value": 17
+      },
+      {
+        "name": "DPESSOAL.F_APDATA_ABERTURA_VAGA_STEP",
+        "value": 17
+      },
+      {
+        "name": "dpessoal.F_COLABORADOR_FOLHA",
+        "value": 17
+      },
+      {
+        "name": "DPESSOAL.VW_D_COLABORADOR_GRADE",
+        "value": 17
+      }
+    ],
+    "topReportsByLines": [
+      {
+        "relatorio": "Metas Turnover FY25 - Regrettable e Demissional",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
+        "linhas": 72,
+        "fontes": 6,
+        "tabelas": 20,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Indicadores RH",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
+        "linhas": 57,
+        "fontes": 6,
+        "tabelas": 17,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Wokforce Planning",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
+        "linhas": 49,
+        "fontes": 7,
+        "tabelas": 14,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Base de Dados Modelo de Trabalho - Home Office",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
+        "linhas": 28,
+        "fontes": 5,
+        "tabelas": 15,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Indicadores de Modelo de Trabalho - Home Office",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
+        "linhas": 28,
+        "fontes": 5,
+        "tabelas": 15,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Indicadores DE&I",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
+        "linhas": 20,
+        "fontes": 4,
+        "tabelas": 15,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Visão consolidada",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
+        "linhas": 15,
+        "fontes": 3,
+        "tabelas": 11,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Horas Extras e Absenteísmo",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
+        "linhas": 11,
+        "fontes": 2,
+        "tabelas": 11,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Painel de Vagas Operacionais",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
+        "linhas": 11,
+        "fontes": 3,
+        "tabelas": 11,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Pin People On e Off",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
+        "linhas": 11,
+        "fontes": 3,
+        "tabelas": 9,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Zona Posicionamento Salarial",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ZonaPosicionamentoSalarial/ZonasdePosicionamentoSalarial",
+        "linhas": 8,
+        "fontes": 2,
+        "tabelas": 8,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Banco de Horas",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Bancodehoras/Bancodehoras",
+        "linhas": 7,
+        "fontes": 1,
+        "tabelas": 7,
+        "pendencias": 0
+      }
+    ],
+    "topDatasourcesByLines": [
+      {
+        "datasource": "Elegiveis cota aprendiz (Tableau)",
+        "relatorio": "Metas Turnover FY25 - Regrettable e Demissional",
+        "linhas": 13,
+        "tabelas": 13,
+        "pendencias": 0
+      },
+      {
+        "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
+        "relatorio": "Metas Turnover FY25 - Regrettable e Demissional",
+        "linhas": 13,
+        "tabelas": 13,
+        "pendencias": 0
+      },
+      {
+        "datasource": "METAS_HE_ABSENTEISMO",
+        "relatorio": "Metas Turnover FY25 - Regrettable e Demissional",
+        "linhas": 13,
+        "tabelas": 13,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Other_KPIs_HR",
+        "relatorio": "Metas Turnover FY25 - Regrettable e Demissional",
+        "linhas": 13,
+        "tabelas": 13,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Promoções_Internas",
+        "relatorio": "Metas Turnover FY25 - Regrettable e Demissional",
+        "linhas": 13,
+        "tabelas": 13,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Elegiveis cota aprendiz (Tableau)",
+        "relatorio": "Indicadores RH",
+        "linhas": 10,
+        "tabelas": 10,
+        "pendencias": 0
+      },
+      {
+        "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
+        "relatorio": "Indicadores RH",
+        "linhas": 10,
+        "tabelas": 10,
+        "pendencias": 0
+      },
+      {
+        "datasource": "METAS_HE_ABSENTEISMO",
+        "relatorio": "Indicadores RH",
+        "linhas": 10,
+        "tabelas": 10,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Other_KPIs_HR",
+        "relatorio": "Indicadores RH",
+        "linhas": 10,
+        "tabelas": 10,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Promoções_Internas",
+        "relatorio": "Indicadores RH",
+        "linhas": 10,
+        "tabelas": 10,
+        "pendencias": 0
+      },
+      {
+        "datasource": "DE-PARA_BU",
+        "relatorio": "Wokforce Planning",
+        "linhas": 7,
+        "tabelas": 7,
+        "pendencias": 0
+      },
+      {
+        "datasource": "Elegiveis cota aprendiz (Tableau)",
+        "relatorio": "Wokforce Planning",
+        "linhas": 7,
+        "tabelas": 7,
+        "pendencias": 0
+      }
+    ],
+    "reportsWithIssues": [
+      {
+        "relatorio": "Metas Turnover FY26 - Regrettable e Demissional",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY26-RegrettableeDemissional/MetasdeRHFY26",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      }
+    ]
+  }
+}

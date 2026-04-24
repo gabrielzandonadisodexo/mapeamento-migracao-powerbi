@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-04-24T20:18:52.994Z",
+  "segments": [
+    {
+      "segment": "finance",
+      "brand": "Finanças",
+      "uiLabel": "Finance",
+      "available": true,
+      "metrics": {
+        "paineis": 167,
+        "linhas": 1711,
+        "fontes": 394,
+        "tabelas": 188,
+        "tabelasPreenchidas": 1668,
+        "erros": 33,
+        "semDatasource": 1,
+        "semTabela": 9
+      },
+      "files": {
+        "excel": {
+          "size": 742140,
+          "updatedAt": "14/04/2026, 18:54",
+          "name": "output_automacao_financas.xlsx",
+          "href": "./downloads/finance/output_automacao_financas.xlsx"
+        },
+        "pdf": {
+          "size": 108475,
+          "updatedAt": "24/04/2026, 17:18",
+          "name": "documentacao_mapeamento_dashboards_financas.pdf",
+          "href": "./downloads/finance/documentacao_mapeamento_dashboards_financas.pdf"
+        }
+      }
+    },
+    {
+      "segment": "hr",
+      "brand": "HR",
+      "uiLabel": "HR",
+      "available": true,
+      "metrics": {
+        "paineis": 21,
+        "linhas": 370,
+        "fontes": 63,
+        "tabelas": 41,
+        "tabelasPreenchidas": 369,
+        "erros": 1,
+        "semDatasource": 0,
+        "semTabela": 0
+      },
+      "files": {
+        "excel": {
+          "size": 175636,
+          "updatedAt": "24/04/2026, 17:17",
+          "name": "output_automacao_hr.xlsx",
+          "href": "./downloads/hr/output_automacao_hr.xlsx"
+        },
+        "pdf": {
+          "size": 99443,
+          "updatedAt": "24/04/2026, 17:18",
+          "name": "documentacao_mapeamento_dashboards_hr.pdf",
+          "href": "./downloads/hr/documentacao_mapeamento_dashboards_hr.pdf"
+        }
+      }
+    }
+  ]
+}

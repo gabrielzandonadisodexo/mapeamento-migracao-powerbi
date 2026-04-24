@@ -3,15 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Detailed | Mapeamento de Dashboards de Finanças</title>
-  <link rel="stylesheet" href="./styles.css?v=20260415-no-sidebar-logo">
+  <title>Detailed | Mapeamento de Dashboards Tableau</title>
+  <link rel="stylesheet" href="./styles.css?v=20260424-segments">
 </head>
 <body data-page="detailed">
   <aside class="sidebar" aria-label="Menu principal">
     <div class="brand">
       <div>
-        <strong>Finanças</strong>
+        <strong id="brandName">Finance</strong>
       </div>
+    </div>
+
+    <div class="segment-switch" aria-label="Escolher segmento">
+      <a class="segment-chip" data-segment-link="finance" href="./detailed.html?segment=finance">Finance</a>
+      <a class="segment-chip" data-segment-link="hr" href="./detailed.html?segment=hr">HR</a>
     </div>
 
     <nav>
@@ -26,10 +31,10 @@
 
   <main class="content">
     <section class="intro compact" id="detailed">
-      <p class="eyebrow">Detailed | Output Automação</p>
-      <h1>Consulta detalhada do inventário</h1>
-      <p class="lead">
-        Explore as linhas da planilha `output_automacao.xlsx` com filtros por relatório, schema, status e busca livre.
+      <p class="eyebrow" id="detailedEyebrow">Detailed | Output Automação</p>
+      <h1 id="detailedTitle">Consulta detalhada do inventário</h1>
+      <p class="lead" id="detailedLead">
+        Explore as linhas da planilha consolidada com filtros por relatório, schema, status e busca livre.
       </p>
 
       <div class="metrics" aria-label="Indicadores detalhados">
@@ -55,9 +60,9 @@
     <section class="section-block similarity-section">
       <div class="section-heading">
         <p class="eyebrow">Agrupamento por tabelas</p>
-        <h2>Relatorios com tabelas parecidas</h2>
+        <h2>Relatórios com tabelas parecidas</h2>
         <p>
-          Agrupa pares de relatorios por percentual de tabelas em comum. A faixa verde indica os relatorios com maior potencial de reaproveitamento no mapeamento.
+          Agrupa pares de relatórios por percentual de tabelas em comum. A faixa verde indica os relatórios com maior potencial de reaproveitamento no mapeamento.
         </p>
       </div>
 
@@ -92,7 +97,7 @@
 
       <div class="detail-actions">
         <span id="detailCount">Carregando linhas...</span>
-        <a class="button small" href="./downloads/output_automacao.xlsx" download>Baixar Excel completo</a>
+        <a class="button small" id="detailExcelDownload" href="#" download>Baixar Excel completo</a>
       </div>
 
       <div class="table-shell">
@@ -119,6 +124,6 @@
     </section>
   </main>
 
-  <script src="./app.js?v=20260415-no-sidebar-logo"></script>
+  <script src="./app.js?v=20260424-segments"></script>
 </body>
 </html>

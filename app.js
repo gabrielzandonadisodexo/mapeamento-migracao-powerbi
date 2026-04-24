@@ -4,19 +4,94 @@ const percentFormatter = new Intl.NumberFormat('pt-BR', {
   minimumFractionDigits: 1
 });
 
-const navLinks = Array.from(document.querySelectorAll('.nav-item'));
-const bodyPage = document.body.dataset.page || 'summary';
+const SEGMENTS = {
+  finance: {
+    uiLabel: 'Finance',
+    brand: 'Finanças',
+    summaryEyebrow: 'Tableau | Finanças | Inventário técnico',
+    summaryTitle: 'Mapeamento de fontes e tabelas dos dashboards de Finanças',
+    summaryLead: 'Inventário consolidado para apoiar análise de origem dos dados, dependências entre relatórios e priorização do mapeamento de Finanças.',
+    analyticalEyebrow: 'Analytical | Finanças',
+    analyticalTitle: 'Visão analítica das fontes e tabelas mapeadas',
+    analyticalLead: 'Indicadores e gráficos calculados a partir da base consolidada do segmento de Finanças.',
+    detailedEyebrow: 'Detailed | Finanças',
+    detailedTitle: 'Consulta detalhada do inventário',
+    detailedLead: 'Explore as linhas do inventário de Finanças com filtros por relatório, schema, status e busca livre.',
+    excelDescription: 'Base consolidada com relatório, datasource, link, schema e tabela para o segmento de Finanças.',
+    pdfDescription: 'Resumo executivo, método usado, números finais e pontos de revisão do mapeamento de Finanças.',
+    reviewLabels: {
+      erros: 'Painéis com falha ao localizar workbook ou abrir o fluxo padrão',
+      semTabela: 'Fontes sem tabela identificável por SQL ou lineage',
+      semDatasource: 'Painéis sem datasource encontrado no workbook ou lineage'
+    }
+  },
+  hr: {
+    uiLabel: 'HR',
+    brand: 'HR',
+    summaryEyebrow: 'Tableau | HR | Inventário técnico',
+    summaryTitle: 'Mapeamento de fontes e tabelas dos dashboards de HR',
+    summaryLead: 'Inventário consolidado para apoiar leitura da origem dos dados, dependências entre relatórios e priorização do mapeamento de HR.',
+    analyticalEyebrow: 'Analytical | HR',
+    analyticalTitle: 'Visão analítica das fontes e tabelas mapeadas',
+    analyticalLead: 'Indicadores e gráficos calculados a partir da base consolidada do segmento de HR.',
+    detailedEyebrow: 'Detailed | HR',
+    detailedTitle: 'Consulta detalhada do inventário',
+    detailedLead: 'Explore as linhas do inventário de HR com filtros por relatório, schema, status e busca livre.',
+    excelDescription: 'Base consolidada com relatório, datasource, link, schema e tabela para o segmento de HR.',
+    pdfDescription: 'Resumo executivo, método usado, números finais e pontos de revisão do mapeamento de HR.',
+    reviewLabels: {
+      erros: 'Painéis com falha ao localizar workbook ou abrir o fluxo padrão',
+      semTabela: 'Fontes sem tabela identificável por SQL ou lineage',
+      semDatasource: 'Painéis sem datasource encontrado no workbook ou lineage'
+    }
+  }
+};
+
+const PAGE_LABELS = {
+  summary: 'Resumo',
+  analytical: 'Analytical',
+  detailed: 'Detailed'
+};
+
 const similarityBands = [
-  { id: '0-20', label: '0-20%', min: 0, max: 20, tone: 'tone-red', description: 'Baixa sobreposicao' },
-  { id: '20-40', label: '20-40%', min: 20, max: 40, tone: 'tone-orange', description: 'Sobreposicao inicial' },
-  { id: '40-60', label: '40-60%', min: 40, max: 60, tone: 'tone-yellow', description: 'Sobreposicao media' },
-  { id: '60-80', label: '60-80%', min: 60, max: 80, tone: 'tone-lime', description: 'Alta sobreposicao' },
+  { id: '0-20', label: '0-20%', min: 0, max: 20, tone: 'tone-red', description: 'Baixa sobreposição' },
+  { id: '20-40', label: '20-40%', min: 20, max: 40, tone: 'tone-orange', description: 'Sobreposição inicial' },
+  { id: '40-60', label: '40-60%', min: 40, max: 60, tone: 'tone-yellow', description: 'Sobreposição média' },
+  { id: '60-80', label: '60-80%', min: 60, max: 80, tone: 'tone-lime', description: 'Alta sobreposição' },
   { id: '80-100', label: '80-100%', min: 80, max: 100, tone: 'tone-green', description: 'Maior reaproveitamento' }
 ];
+
+const bodyPage = document.body.dataset.page || 'summary';
+const navLinks = Array.from(document.querySelectorAll('.nav-item'));
+const segmentLinks = Array.from(document.querySelectorAll('[data-segment-link]'));
+const currentUrl = new URL(window.location.href);
+const segmentKey = currentUrl.searchParams.get('segment') === 'hr' ? 'hr' : 'finance';
+const segment = SEGMENTS[segmentKey];
+const dataBase = `./data/${segmentKey}`;
 let similarityState = null;
-const sectionLinks = navLinks
-  .map((link) => ({ link, section: getSectionForLink(link) }))
-  .filter((item) => item.section);
+
+function normalizePath(pathname) {
+  return pathname.replace(/\/index\.html$/, '/');
+}
+
+function withSegment(href, targetSegment = segmentKey) {
+  const url = new URL(href, window.location.href);
+  if (url.origin !== window.location.origin) return href;
+  url.searchParams.set('segment', targetSegment);
+  return `${url.pathname}${url.search}${url.hash}`;
+}
+
+function decorateSegmentAwareLinks() {
+  for (const link of navLinks) {
+    link.setAttribute('href', withSegment(link.getAttribute('href') || ''));
+  }
+
+  for (const link of segmentLinks) {
+    const targetSegment = link.dataset.segmentLink || segmentKey;
+    link.setAttribute('href', withSegment(link.getAttribute('href') || window.location.pathname, targetSegment));
+    link.classList.toggle('active', targetSegment === segmentKey);
+  }
+}
 
 function getSectionForLink(link) {
   const href = link.getAttribute('href') || '';
@@ -34,11 +109,11 @@ function getSectionForLink(link) {
   return null;
 }
 
-function normalizePath(pathname) {
-  return pathname.replace(/\/index\.html$/, '/');
-}
-
 function updateActiveLink() {
+  const sectionLinks = navLinks
+    .map((link) => ({ link, section: getSectionForLink(link) }))
+    .filter((item) => item.section);
+
   if (!sectionLinks.length) return;
 
   const current = sectionLinks
@@ -52,7 +127,9 @@ function updateActiveLink() {
 
   for (const link of navLinks) {
     const section = getSectionForLink(link);
-    link.classList.toggle('active', section?.id === current.id);
+    if (section) {
+      link.classList.toggle('active', section.id === current.id);
+    }
   }
 }
 
@@ -83,34 +160,6 @@ function normalizeText(value) {
     .toLowerCase();
 }
 
-async function fetchJson(path) {
-  const response = await fetch(path, { cache: 'no-store' });
-  if (!response.ok) {
-    throw new Error(`Falha ao carregar ${path}`);
-  }
-  return response.json();
-}
-
-async function loadManifest() {
-  try {
-    const manifest = await fetchJson('./manifest.json');
-
-    for (const [key, file] of Object.entries(manifest.files || {})) {
-      const node = document.querySelector(`[data-file="${key}"]`);
-      if (!node) continue;
-      const size = formatBytes(file.size);
-      node.textContent = [size, file.updatedAt].filter(Boolean).join(' | ');
-    }
-
-    for (const [key, value] of Object.entries(manifest.metrics || {})) {
-      const node = document.querySelector(`[data-metric="${key}"]`);
-      if (node) node.textContent = formatNumber(value);
-    }
-  } catch {
-    // Metadata is optional; downloads stay available without it.
-  }
-}
-
 function setText(selector, value) {
   const node = document.querySelector(selector);
   if (node) node.textContent = value;
@@ -133,6 +182,97 @@ function createEmptyMessage(message, colspan = 1) {
   cell.textContent = message;
   row.appendChild(cell);
   return row;
+}
+
+async function fetchJson(filePath) {
+  const response = await fetch(filePath, { cache: 'no-store' });
+  if (!response.ok) {
+    throw new Error(`Falha ao carregar ${filePath}`);
+  }
+  return response.json();
+}
+
+async function loadSegmentsCatalog() {
+  try {
+    const payload = await fetchJson('./data/segments.json');
+    for (const link of segmentLinks) {
+      const targetSegment = link.dataset.segmentLink;
+      const entry = payload.segments.find((item) => item.segment === targetSegment);
+      if (!entry?.available) {
+        link.classList.add('is-disabled');
+        link.setAttribute('aria-disabled', 'true');
+        link.title = entry?.error || 'Segmento ainda não disponível';
+      }
+    }
+  } catch {
+    // Optional. Segment links still work when the catalog is unavailable.
+  }
+}
+
+function applySegmentCopy() {
+  document.title = `${PAGE_LABELS[bodyPage] || 'Mapa'} | ${segment.brand}`;
+  setText('#brandName', segment.brand);
+  setText('#summaryEyebrow', segment.summaryEyebrow);
+  setText('#summaryTitle', segment.summaryTitle);
+  setText('#summaryLead', segment.summaryLead);
+  setText('#analyticalEyebrow', segment.analyticalEyebrow);
+  setText('#analyticalTitle', segment.analyticalTitle);
+  setText('#analyticalLead', segment.analyticalLead);
+  setText('#detailedEyebrow', segment.detailedEyebrow);
+  setText('#detailedTitle', segment.detailedTitle);
+  setText('#detailedLead', segment.detailedLead);
+  setText('#excelDescription', segment.excelDescription);
+  setText('#pdfDescription', segment.pdfDescription);
+  setText('#reviewErroLabel', segment.reviewLabels.erros);
+  setText('#reviewSemTabelaLabel', segment.reviewLabels.semTabela);
+  setText('#reviewSemDatasourceLabel', segment.reviewLabels.semDatasource);
+}
+
+function applyDownloadLinks(manifest) {
+  const excel = manifest?.files?.excel;
+  const pdf = manifest?.files?.pdf;
+
+  if (excel) {
+    setText('#excelName', excel.name);
+    const summaryDownload = document.getElementById('excelDownload');
+    const detailDownload = document.getElementById('detailExcelDownload');
+    if (summaryDownload) summaryDownload.href = excel.href;
+    if (detailDownload) detailDownload.href = excel.href;
+  }
+
+  if (pdf) {
+    setText('#pdfName', pdf.name);
+    const pdfDownload = document.getElementById('pdfDownload');
+    if (pdfDownload) pdfDownload.href = pdf.href;
+  } else {
+    const pdfDownload = document.getElementById('pdfDownload');
+    if (pdfDownload) {
+      pdfDownload.classList.add('is-disabled');
+      pdfDownload.removeAttribute('href');
+      pdfDownload.textContent = 'PDF em preparação';
+    }
+  }
+}
+
+function applySummaryManifest(manifest) {
+  for (const [key, value] of Object.entries(manifest.metrics || {})) {
+    const node = document.querySelector(`[data-metric="${key}"]`);
+    if (node) node.textContent = formatNumber(value);
+  }
+
+  setMetric('data-review', 'erros', formatNumber(manifest.metrics?.erros));
+  setMetric('data-review', 'semTabela', formatNumber(manifest.metrics?.semTabela));
+  setMetric('data-review', 'semDatasource', formatNumber(manifest.metrics?.semDatasource));
+
+  for (const [key, file] of Object.entries(manifest.files || {})) {
+    if (!file) continue;
+    const node = document.querySelector(`[data-file="${key}"]`);
+    if (!node) continue;
+    const size = formatBytes(file.size);
+    node.textContent = [size, file.updatedAt].filter(Boolean).join(' | ');
+  }
+
+  applyDownloadLinks(manifest);
 }
 
 function createStatusPill(status) {
@@ -195,35 +335,6 @@ function renderBarList(containerId, items, labelSelector, valueSelector) {
   }
 }
 
-async function renderAnalyticalPage() {
-  let data;
-  try {
-    data = await fetchJson('./data/analytics.json');
-  } catch {
-    setText('#statusBars', 'Nao foi possivel carregar a base analitica.');
-    return;
-  }
-
-  const summary = data.summary || {};
-  setMetric('data-analytics', 'coberturaTabelaPct', formatPercent(summary.coberturaTabelaPct));
-  setMetric('data-analytics', 'relatoriosComPendencia', formatNumber(summary.relatoriosComPendencia));
-  setMetric('data-analytics', 'fontesComPendencia', formatNumber(summary.fontesComPendencia));
-  setMetric('data-analytics', 'linhasSemTabela', formatNumber(summary.linhasSemTabela));
-
-  const charts = data.charts || {};
-  renderBarList('statusBars', charts.status, (item) => item.name, (item) => item.value);
-  renderBarList('schemaBars', charts.topSchemas, (item) => item.name, (item) => item.value);
-  renderBarList('tableBars', charts.topTables, (item) => item.name, (item) => item.value);
-  renderBarList(
-    'reportBars',
-    charts.topReportsByLines,
-    (item) => `${item.relatorio} | ${formatNumber(item.fontes)} fontes`,
-    (item) => item.linhas
-  );
-
-  renderIssueTable(charts.reportsWithIssues || []);
-}
-
 function renderIssueTable(items) {
   const table = document.getElementById('issueTable');
   if (!table) return;
@@ -236,8 +347,8 @@ function renderIssueTable(items) {
 
   for (const item of items) {
     const row = document.createElement('tr');
-
     const reportCell = document.createElement('td');
+
     if (item.link_relatorio?.startsWith('http')) {
       const link = document.createElement('a');
       link.href = item.link_relatorio;
@@ -263,10 +374,48 @@ function renderIssueTable(items) {
   }
 }
 
+async function loadManifest() {
+  try {
+    const manifest = await fetchJson(`${dataBase}/manifest.json`);
+    applySummaryManifest(manifest);
+    return manifest;
+  } catch {
+    return null;
+  }
+}
+
+async function renderAnalyticalPage() {
+  let data;
+  try {
+    data = await fetchJson(`${dataBase}/analytics.json`);
+  } catch {
+    setText('#statusBars', 'Nao foi possivel carregar a base analitica.');
+    return;
+  }
+
+  const summary = data.summary || {};
+  setMetric('data-analytics', 'coberturaTabelaPct', formatPercent(summary.coberturaTabelaPct));
+  setMetric('data-analytics', 'relatoriosComPendencia', formatNumber(summary.relatoriosComPendencia));
+  setMetric('data-analytics', 'fontesComPendencia', formatNumber(summary.fontesComPendencia));
+  setMetric('data-analytics', 'linhasSemTabela', formatNumber(summary.linhasSemTabela));
+
+  const charts = data.charts || {};
+  renderBarList('statusBars', charts.status, (item) => item.name, (item) => item.value);
+  renderBarList('schemaBars', charts.topSchemas, (item) => item.name, (item) => item.value);
+  renderBarList('tableBars', charts.topTables, (item) => item.name, (item) => item.value);
+  renderBarList(
+    'reportBars',
+    charts.topReportsByLines,
+    (item) => `${item.relatorio} | ${formatNumber(item.fontes)} fontes`,
+    (item) => item.linhas
+  );
+  renderIssueTable(charts.reportsWithIssues || []);
+}
+
 async function renderDetailedPage() {
   let data;
   try {
-    data = await fetchJson('./data/details.json');
+    data = await fetchJson(`${dataBase}/details.json`);
   } catch {
     setText('#detailCount', 'Nao foi possivel carregar a base detalhada.');
     return;
@@ -298,6 +447,7 @@ async function renderDetailedPage() {
 
   for (const id of ['searchInput', 'statusFilter', 'schemaFilter', 'reportFilter']) {
     document.getElementById(id)?.addEventListener('input', applyAndRender);
+    document.getElementById(id)?.addEventListener('change', applyAndRender);
   }
 
   document.getElementById('prevPage')?.addEventListener('click', () => {
@@ -384,11 +534,7 @@ function buildSimilarityModel(rows) {
     pairsByBand.get(pair.bandId)?.push(pair);
   }
 
-  return {
-    reports,
-    pairs,
-    pairsByBand
-  };
+  return { reports, pairs, pairsByBand };
 }
 
 function buildReportTableSets(rows) {
@@ -456,10 +602,8 @@ function renderSimilarityBands() {
 
     const label = document.createElement('strong');
     label.textContent = band.label;
-
     const description = document.createElement('span');
     description.textContent = band.description;
-
     const count = document.createElement('small');
     count.textContent = `${formatNumber(pairs.length)} pares | ate ${formatNumber(maxCommon)} tabelas em comum`;
 
@@ -484,18 +628,17 @@ function renderSimilarityPanel() {
   if (!similarityState.activeBandId) {
     const hint = document.createElement('p');
     hint.className = 'similarity-hint';
-    hint.textContent = 'Selecione uma faixa para priorizar relatorios com tabelas parecidas e avaliar onde um mesmo mapeamento pode atender mais de um report.';
+    hint.textContent = 'Selecione uma faixa para priorizar relatórios com tabelas parecidas e avaliar onde um mesmo mapeamento pode atender mais de um report.';
     panel.appendChild(hint);
     return;
   }
 
   const band = similarityBands.find((item) => item.id === similarityState.activeBandId);
   const pairs = similarityState.model.pairsByBand.get(similarityState.activeBandId) || [];
-
   if (!pairs.length) {
     const empty = document.createElement('p');
     empty.className = 'empty-state';
-    empty.textContent = 'Nao foram encontrados relatorios nessa faixa.';
+    empty.textContent = 'Nao foram encontrados relatórios nessa faixa.';
     panel.appendChild(empty);
     return;
   }
@@ -510,13 +653,10 @@ function renderSimilarityPanel() {
 
   const header = document.createElement('div');
   header.className = 'similarity-board-header';
-
   const title = document.createElement('h3');
   title.textContent = `Melhores oportunidades em ${band.label}`;
-
   const subtitle = document.createElement('p');
-  subtitle.textContent = 'Abra um par de relatorios para ver quais tabelas podem ser mapeadas uma vez e reaproveitadas nos dois.';
-
+  subtitle.textContent = 'Abra um par de relatórios para ver quais tabelas podem ser mapeadas uma vez e reaproveitadas nos dois.';
   header.append(title, subtitle);
   board.appendChild(header);
 
@@ -539,13 +679,10 @@ function renderSimilarityPanel() {
 function createSummaryTile(label, value, suffix = '') {
   const tile = document.createElement('article');
   tile.className = 'similarity-summary-tile';
-
   const number = document.createElement('strong');
   number.textContent = formatNumber(value);
-
   const text = document.createElement('span');
   text.textContent = suffix ? `${label} (${suffix})` : label;
-
   tile.append(number, text);
   return tile;
 }
@@ -553,8 +690,8 @@ function createSummaryTile(label, value, suffix = '') {
 function createSimilarityAccordionNode(pair, rank) {
   const item = document.createElement('article');
   item.className = 'similarity-accordion-item';
-
   const isExpanded = similarityState.activePairId === pair.id;
+
   const trigger = document.createElement('button');
   trigger.className = 'similarity-accordion-trigger';
   trigger.type = 'button';
@@ -566,8 +703,8 @@ function createSimilarityAccordionNode(pair, rank) {
 
   const names = document.createElement('span');
   names.className = 'similarity-pair-summary';
-  names.appendChild(createReportSummary('Relatorio A', pair.reportA.name));
-  names.appendChild(createReportSummary('Relatorio B', pair.reportB.name));
+  names.appendChild(createReportSummary('Relatório A', pair.reportA.name));
+  names.appendChild(createReportSummary('Relatório B', pair.reportB.name));
 
   const metrics = document.createElement('span');
   metrics.className = 'similarity-trigger-metrics';
@@ -579,25 +716,21 @@ function createSimilarityAccordionNode(pair, rank) {
     similarityState.activePairId = isExpanded ? null : pair.id;
     renderSimilarityPanel();
   });
-  item.appendChild(trigger);
 
+  item.appendChild(trigger);
   if (isExpanded) {
     item.appendChild(createSimilarityAccordionBody(pair));
   }
-
   return item;
 }
 
 function createReportSummary(label, name) {
   const wrapper = document.createElement('span');
   wrapper.className = 'similarity-report-summary';
-
   const small = document.createElement('small');
   small.textContent = label;
-
   const strong = document.createElement('strong');
   strong.textContent = name;
-
   wrapper.append(small, strong);
   return wrapper;
 }
@@ -619,7 +752,7 @@ function createSimilarityAccordionBody(pair) {
 
   const recommendation = document.createElement('p');
   recommendation.className = 'similarity-recommendation';
-  recommendation.textContent = `Priorize estas ${formatNumber(pair.commonCount)} tabelas quando o objetivo for atender os dois relatorios com o mesmo trabalho de mapeamento.`;
+  recommendation.textContent = `Priorize estas ${formatNumber(pair.commonCount)} tabelas quando o objetivo for atender os dois relatórios com o mesmo trabalho de mapeamento.`;
   body.appendChild(recommendation);
 
   const common = document.createElement('section');
@@ -632,17 +765,16 @@ function createSimilarityAccordionBody(pair) {
   if (!pair.onlyA.length && !pair.onlyB.length) {
     const fullOverlap = document.createElement('p');
     fullOverlap.className = 'similarity-full-overlap';
-    fullOverlap.textContent = 'Os dois relatorios usam o mesmo conjunto de tabelas mapeadas nesta base.';
+    fullOverlap.textContent = 'Os dois relatórios usam o mesmo conjunto de tabelas mapeadas nesta base.';
     body.appendChild(fullOverlap);
     return body;
   }
 
   const exclusive = document.createElement('div');
   exclusive.className = 'similarity-exclusive';
-  exclusive.appendChild(createCompactTableGroup(`So no Relatorio A (${pair.reportA.name})`, pair.onlyA));
-  exclusive.appendChild(createCompactTableGroup(`So no Relatorio B (${pair.reportB.name})`, pair.onlyB));
+  exclusive.appendChild(createCompactTableGroup(`Só no Relatório A (${pair.reportA.name})`, pair.onlyA));
+  exclusive.appendChild(createCompactTableGroup(`Só no Relatório B (${pair.reportB.name})`, pair.onlyB));
   body.appendChild(exclusive);
-
   return body;
 }
 
@@ -668,7 +800,6 @@ function createChipList(tables, emptyText) {
 function createCompactTableGroup(title, tables) {
   const group = document.createElement('div');
   group.className = 'similarity-exclusive-group';
-
   const heading = document.createElement('h4');
   heading.textContent = title;
   group.appendChild(heading);
@@ -754,7 +885,7 @@ function renderDetailRows(state) {
   }
 
   setText('#detailCount', `${formatNumber(state.filteredRows.length)} linhas encontradas`);
-  setText('#pageInfo', `Pagina ${formatNumber(state.page)} de ${formatNumber(pageCount)}`);
+  setText('#pageInfo', `Página ${formatNumber(state.page)} de ${formatNumber(pageCount)}`);
 
   const prev = document.getElementById('prevPage');
   const next = document.getElementById('nextPage');
@@ -787,15 +918,19 @@ function createLinkNode(row) {
   return note;
 }
 
+decorateSegmentAwareLinks();
+applySegmentCopy();
+loadSegmentsCatalog();
 window.addEventListener('scroll', updateActiveLink, { passive: true });
 window.addEventListener('resize', updateActiveLink);
 updateActiveLink();
-loadManifest();
 
-if (bodyPage === 'analytical') {
-  renderAnalyticalPage();
-}
+loadManifest().then(() => {
+  if (bodyPage === 'analytical') {
+    renderAnalyticalPage();
+  }
 
-if (bodyPage === 'detailed') {
-  renderDetailedPage();
-}
+  if (bodyPage === 'detailed') {
+    renderDetailedPage();
+  }
+});

@@ -53,7 +53,7 @@ a {
 .brand {
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   display: block;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
 }
 
 .brand strong,
@@ -68,6 +68,34 @@ a {
 .brand span {
   color: rgba(255, 255, 255, 0.72);
   font-size: 12px;
+}
+
+.segment-switch {
+  display: grid;
+  gap: 8px;
+}
+
+.segment-chip {
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: var(--radius);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px 11px;
+  text-decoration: none;
+}
+
+.segment-chip:hover,
+.segment-chip.active {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.42);
+  color: #ffffff;
+}
+
+.segment-chip.is-disabled,
+.button.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
 }
 
 nav {

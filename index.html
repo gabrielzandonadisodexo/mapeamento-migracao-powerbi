@@ -3,15 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mapeamento de Dashboards de Finanças</title>
-  <link rel="stylesheet" href="./styles.css?v=20260415-no-sidebar-logo">
+  <title>Mapeamento de Dashboards Tableau</title>
+  <link rel="stylesheet" href="./styles.css?v=20260424-segments">
 </head>
-<body>
+<body data-page="summary">
   <aside class="sidebar" aria-label="Menu principal">
     <div class="brand">
       <div>
-        <strong>Finanças</strong>
+        <strong id="brandName">Finance</strong>
       </div>
+    </div>
+
+    <div class="segment-switch" aria-label="Escolher segmento">
+      <a class="segment-chip" data-segment-link="finance" href="./index.html?segment=finance">Finance</a>
+      <a class="segment-chip" data-segment-link="hr" href="./index.html?segment=hr">HR</a>
     </div>
 
     <nav>
@@ -26,27 +31,27 @@
 
   <main class="content">
     <section class="intro" id="resumo">
-      <p class="eyebrow">Tableau | Finanças | Abril de 2026</p>
-      <h1>Mapeamento de fontes e tabelas dos dashboards de Finanças</h1>
-      <p class="lead">
-        Inventário consolidado para apoiar análise de origem dos dados, dependências dos relatórios e revisões com POs e áreas de negócio.
+      <p class="eyebrow" id="summaryEyebrow">Tableau | Segmento</p>
+      <h1 id="summaryTitle">Mapeamento de fontes e tabelas dos dashboards</h1>
+      <p class="lead" id="summaryLead">
+        Inventário consolidado para leitura da origem dos dados, dependências entre relatórios e apoio à priorização do mapeamento.
       </p>
 
       <div class="metrics" aria-label="Números da execução">
         <article class="metric">
-          <strong data-metric="paineis">167</strong>
+          <strong data-metric="paineis">--</strong>
           <span>Painéis processados</span>
         </article>
         <article class="metric">
-          <strong data-metric="fontes">394</strong>
+          <strong data-metric="fontes">--</strong>
           <span>Fontes mapeadas</span>
         </article>
         <article class="metric">
-          <strong data-metric="tabelas">188</strong>
+          <strong data-metric="tabelas">--</strong>
           <span>Tabelas/views distintas</span>
         </article>
         <article class="metric">
-          <strong data-metric="linhas">1.711</strong>
+          <strong data-metric="linhas">--</strong>
           <span>Linhas no Excel final</span>
         </article>
       </div>
@@ -56,28 +61,28 @@
       <div class="section-heading">
         <p class="eyebrow">Downloads</p>
         <h2>Planilha e relatório</h2>
-        <p>Arquivos finais gerados pela execução completa do mapeamento.</p>
+        <p>Arquivos finais gerados para o segmento selecionado.</p>
       </div>
 
       <div class="download-grid">
         <article class="download-card">
           <div>
             <span class="file-type">XLSX</span>
-            <h3>output_automacao.xlsx</h3>
-            <p>Base consolidada com relatório, datasource, link, schema e tabela.</p>
+            <h3 id="excelName">output_automacao.xlsx</h3>
+            <p id="excelDescription">Base consolidada com relatório, datasource, link, schema e tabela.</p>
             <span class="file-meta" data-file="excel">Arquivo Excel</span>
           </div>
-          <a class="button" href="./downloads/output_automacao.xlsx" download>Baixar planilha Excel</a>
+          <a class="button" id="excelDownload" href="#" download>Baixar planilha Excel</a>
         </article>
 
         <article class="download-card">
           <div>
             <span class="file-type">PDF</span>
-            <h3>documentação do mapeamento</h3>
-            <p>Resumo executivo, método usado, números finais e pontos de revisão.</p>
+            <h3 id="pdfName">documentação do mapeamento</h3>
+            <p id="pdfDescription">Resumo executivo, método usado, números finais e pontos de revisão.</p>
             <span class="file-meta" data-file="pdf">Arquivo PDF</span>
           </div>
-          <a class="button secondary" href="./downloads/documentacao_mapeamento_dashboards_financas.pdf" download>Baixar relatório PDF</a>
+          <a class="button secondary" id="pdfDownload" href="#" download>Baixar relatório PDF</a>
         </article>
       </div>
     </section>
@@ -102,21 +107,21 @@
 
       <div class="review-list">
         <article>
-          <strong>33</strong>
-          <span>Painéis sem workbook localizado pelo Data Details</span>
+          <strong data-review="erros">--</strong>
+          <span id="reviewErroLabel">Painéis com falha ao localizar workbook ou abrir o fluxo padrão</span>
         </article>
         <article>
-          <strong>9</strong>
-          <span>Fontes sem Custom SQL ou tabela identificável</span>
+          <strong data-review="semTabela">--</strong>
+          <span id="reviewSemTabelaLabel">Fontes sem tabela identificável por SQL ou lineage</span>
         </article>
         <article>
-          <strong>1</strong>
-          <span>Painel sem datasource encontrado no workbook/lineage</span>
+          <strong data-review="semDatasource">--</strong>
+          <span id="reviewSemDatasourceLabel">Painéis sem datasource encontrado no workbook ou lineage</span>
         </article>
       </div>
     </section>
   </main>
 
-  <script src="./app.js?v=20260415-no-sidebar-logo"></script>
+  <script src="./app.js?v=20260424-segments"></script>
 </body>
 </html>
