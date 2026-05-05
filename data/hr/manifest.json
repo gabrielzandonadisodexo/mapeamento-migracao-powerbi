@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T20:18:52.983Z",
+  "generatedAt": "2026-05-04T12:52:20.355Z",
   "segment": "hr",
   "brand": "HR",
   "uiLabel": "HR",
@@ -15,14 +15,14 @@
   },
   "files": {
     "excel": {
-      "size": 175636,
-      "updatedAt": "24/04/2026, 17:17",
+      "size": 209989,
+      "updatedAt": "04/05/2026, 09:52",
       "name": "output_automacao_hr.xlsx",
       "href": "./downloads/hr/output_automacao_hr.xlsx"
     },
     "pdf": {
-      "size": 99443,
-      "updatedAt": "24/04/2026, 17:18",
+      "size": 104531,
+      "updatedAt": "04/05/2026, 09:51",
       "name": "documentacao_mapeamento_dashboards_hr.pdf",
       "href": "./downloads/hr/documentacao_mapeamento_dashboards_hr.pdf"
     }

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mapeamento de Dashboards Tableau</title>
-  <link rel="stylesheet" href="./styles.css?v=20260424-segments">
+  <title>mapeamento-migracao-powerbi</title>
+  <link rel="stylesheet" href="./styles.css?v=20260504-segments-lineage">
 </head>
 <body data-page="summary">
   <aside class="sidebar" aria-label="Menu principal">
@@ -15,8 +15,12 @@
     </div>
 
     <div class="segment-switch" aria-label="Escolher segmento">
-      <a class="segment-chip" data-segment-link="finance" href="./index.html?segment=finance">Finance</a>
-      <a class="segment-chip" data-segment-link="hr" href="./index.html?segment=hr">HR</a>
+      <label class="segment-switch-label" for="segmentSelect">Segmento</label>
+      <select id="segmentSelect" data-segment-select>
+        <option value="finance">Finance</option>
+        <option value="hr">HR</option>
+      </select>
+      <p class="segment-switch-hint" data-segment-hint>Troque de segmento e mantenha a pagina atual.</p>
     </div>
 
     <nav>
@@ -122,6 +126,6 @@
     </section>
   </main>
 
-  <script src="./app.js?v=20260424-segments"></script>
+  <script src="./app.js?v=20260504-segments-lineage"></script>
 </body>
 </html>

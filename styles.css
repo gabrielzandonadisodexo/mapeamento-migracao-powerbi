@@ -75,24 +75,42 @@ a {
   gap: 8px;
 }
 
-.segment-chip {
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: var(--radius);
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 13px;
+.segment-switch-label {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
   font-weight: 700;
-  padding: 9px 11px;
-  text-decoration: none;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
-.segment-chip:hover,
-.segment-chip.active {
+.segment-switch select {
+  appearance: none;
   background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: var(--radius);
   color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  min-height: 44px;
+  padding: 10px 12px;
 }
 
-.segment-chip.is-disabled,
+.segment-switch select:focus {
+  border-color: rgba(255, 255, 255, 0.52);
+  outline: 2px solid rgba(255, 255, 255, 0.28);
+}
+
+.segment-switch select option {
+  color: var(--ink);
+}
+
+.segment-switch-hint {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 0;
+}
+
 .button.is-disabled {
   cursor: not-allowed;
   opacity: 0.48;
@@ -472,7 +490,7 @@ figcaption {
 .filters {
   display: grid;
   gap: 14px;
-  grid-template-columns: 1.35fr repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(240px, 1.4fr) repeat(5, minmax(150px, 1fr));
   margin-top: 18px;
 }
 
@@ -527,7 +545,7 @@ figcaption {
 .data-table {
   background: #ffffff;
   border-collapse: collapse;
-  min-width: 980px;
+  min-width: 1480px;
   width: 100%;
 }
 
@@ -566,6 +584,10 @@ figcaption {
 
 .wide-cell {
   min-width: 220px;
+}
+
+.field-list-cell {
+  min-width: 340px;
 }
 
 .status-pill {

@@ -1,10 +1,29 @@
 {
-  "generatedAt": "2026-04-24T20:18:52.994Z",
+  "generatedAt": "2026-05-04T12:52:20.368Z",
   "segments": [
     {
       "segment": "finance",
-      "brand": "Finanças",
+      "brand": "Financas",
       "uiLabel": "Finance",
+      "domainLabel": "Financas",
+      "copy": {
+        "summaryEyebrow": "Tableau | Financas | Inventario tecnico",
+        "summaryTitle": "Mapeamento de fontes e tabelas dos dashboards de Financas",
+        "summaryLead": "Inventario consolidado para apoiar a leitura da origem dos dados, dependencias entre relatorios e priorizacao do mapeamento de Financas.",
+        "analyticalEyebrow": "Analytical | Financas",
+        "analyticalTitle": "Visao analitica das fontes e tabelas mapeadas",
+        "analyticalLead": "Indicadores e graficos calculados a partir da base consolidada do segmento de Financas.",
+        "detailedEyebrow": "Detailed | Financas",
+        "detailedTitle": "Consulta detalhada do inventario",
+        "detailedLead": "Explore as linhas do inventario de Financas com filtros por relatorio, schema, status, origem e busca livre.",
+        "excelDescription": "Base consolidada com relatorio, datasource, origem, campos, tipo de campo, schema e tabela para o segmento de Financas.",
+        "pdfDescription": "Resumo executivo, metodo usado, numeros finais e pontos de revisao do mapeamento de Financas.",
+        "reviewLabels": {
+          "erros": "Paineis com falha ao localizar workbook ou abrir o fluxo padrao",
+          "semTabela": "Fontes sem tabela identificavel por SQL ou lineage",
+          "semDatasource": "Paineis sem datasource encontrado no workbook ou lineage"
+        }
+      },
       "available": true,
       "metrics": {
         "paineis": 167,
@@ -18,14 +37,14 @@
       },
       "files": {
         "excel": {
-          "size": 742140,
-          "updatedAt": "14/04/2026, 18:54",
+          "size": 903345,
+          "updatedAt": "04/05/2026, 09:52",
           "name": "output_automacao_financas.xlsx",
           "href": "./downloads/finance/output_automacao_financas.xlsx"
         },
         "pdf": {
-          "size": 108475,
-          "updatedAt": "24/04/2026, 17:18",
+          "size": 114093,
+          "updatedAt": "04/05/2026, 09:51",
           "name": "documentacao_mapeamento_dashboards_financas.pdf",
           "href": "./downloads/finance/documentacao_mapeamento_dashboards_financas.pdf"
         }
@@ -35,6 +54,25 @@
       "segment": "hr",
       "brand": "HR",
       "uiLabel": "HR",
+      "domainLabel": "HR",
+      "copy": {
+        "summaryEyebrow": "Tableau | HR | Inventario tecnico",
+        "summaryTitle": "Mapeamento de fontes e tabelas dos dashboards de HR",
+        "summaryLead": "Inventario consolidado para apoiar a leitura da origem dos dados, dependencias entre relatorios e priorizacao do mapeamento de HR.",
+        "analyticalEyebrow": "Analytical | HR",
+        "analyticalTitle": "Visao analitica das fontes e tabelas mapeadas",
+        "analyticalLead": "Indicadores e graficos calculados a partir da base consolidada do segmento de HR.",
+        "detailedEyebrow": "Detailed | HR",
+        "detailedTitle": "Consulta detalhada do inventario",
+        "detailedLead": "Explore as linhas do inventario de HR com filtros por relatorio, schema, status, origem e busca livre.",
+        "excelDescription": "Base consolidada com relatorio, datasource, origem, campos, tipo de campo, schema e tabela para o segmento de HR.",
+        "pdfDescription": "Resumo executivo, metodo usado, numeros finais e pontos de revisao do mapeamento de HR.",
+        "reviewLabels": {
+          "erros": "Paineis com falha ao localizar workbook ou abrir o fluxo padrao",
+          "semTabela": "Fontes sem tabela identificavel por SQL ou lineage",
+          "semDatasource": "Paineis sem datasource encontrado no workbook ou lineage"
+        }
+      },
       "available": true,
       "metrics": {
         "paineis": 21,
@@ -48,14 +86,14 @@
       },
       "files": {
         "excel": {
-          "size": 175636,
-          "updatedAt": "24/04/2026, 17:17",
+          "size": 209989,
+          "updatedAt": "04/05/2026, 09:52",
           "name": "output_automacao_hr.xlsx",
           "href": "./downloads/hr/output_automacao_hr.xlsx"
         },
         "pdf": {
-          "size": 99443,
-          "updatedAt": "24/04/2026, 17:18",
+          "size": 104531,
+          "updatedAt": "04/05/2026, 09:51",
           "name": "documentacao_mapeamento_dashboards_hr.pdf",
           "href": "./downloads/hr/documentacao_mapeamento_dashboards_hr.pdf"
         }

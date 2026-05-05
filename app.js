@@ -4,48 +4,41 @@ const percentFormatter = new Intl.NumberFormat('pt-BR', {
   minimumFractionDigits: 1
 });
 
-const SEGMENTS = {
-  finance: {
-    uiLabel: 'Finance',
-    brand: 'Finanças',
-    summaryEyebrow: 'Tableau | Finanças | Inventário técnico',
-    summaryTitle: 'Mapeamento de fontes e tabelas dos dashboards de Finanças',
-    summaryLead: 'Inventário consolidado para apoiar análise de origem dos dados, dependências entre relatórios e priorização do mapeamento de Finanças.',
-    analyticalEyebrow: 'Analytical | Finanças',
-    analyticalTitle: 'Visão analítica das fontes e tabelas mapeadas',
-    analyticalLead: 'Indicadores e gráficos calculados a partir da base consolidada do segmento de Finanças.',
-    detailedEyebrow: 'Detailed | Finanças',
-    detailedTitle: 'Consulta detalhada do inventário',
-    detailedLead: 'Explore as linhas do inventário de Finanças com filtros por relatório, schema, status e busca livre.',
-    excelDescription: 'Base consolidada com relatório, datasource, link, schema e tabela para o segmento de Finanças.',
-    pdfDescription: 'Resumo executivo, método usado, números finais e pontos de revisão do mapeamento de Finanças.',
+const PROJECT_NAME = 'mapeamento-migracao-powerbi';
+const DEFAULT_SEGMENT_KEY = 'finance';
+
+function formatSegmentLabel(value) {
+  return String(value || '')
+    .replace(/[-_]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\b\w/g, (letter) => letter.toUpperCase()) || 'Segmento';
+}
+
+function buildSegmentCopy(segmentMeta = {}) {
+  const domainLabel = segmentMeta.domainLabel || segmentMeta.brand || segmentMeta.uiLabel || formatSegmentLabel(segmentMeta.segment);
+  const copy = segmentMeta.copy || {};
+  return {
+    uiLabel: segmentMeta.uiLabel || formatSegmentLabel(segmentMeta.segment),
+    brand: segmentMeta.brand || domainLabel,
+    summaryEyebrow: copy.summaryEyebrow || `Tableau | ${domainLabel} | Inventario tecnico`,
+    summaryTitle: copy.summaryTitle || `Mapeamento de fontes e tabelas dos dashboards de ${domainLabel}`,
+    summaryLead: copy.summaryLead || `Inventario consolidado para apoiar a leitura da origem dos dados, dependencias entre relatorios e priorizacao do mapeamento de ${domainLabel}.`,
+    analyticalEyebrow: copy.analyticalEyebrow || `Analytical | ${domainLabel}`,
+    analyticalTitle: copy.analyticalTitle || 'Visao analitica das fontes e tabelas mapeadas',
+    analyticalLead: copy.analyticalLead || `Indicadores e graficos calculados a partir da base consolidada do segmento de ${domainLabel}.`,
+    detailedEyebrow: copy.detailedEyebrow || `Detailed | ${domainLabel}`,
+    detailedTitle: copy.detailedTitle || 'Consulta detalhada do inventario',
+    detailedLead: copy.detailedLead || `Explore as linhas do inventario de ${domainLabel} com filtros por relatorio, schema, status, origem e busca livre.`,
+    excelDescription: copy.excelDescription || `Base consolidada com relatorio, datasource, origem, campos, tipo de campo, schema e tabela para o segmento de ${domainLabel}.`,
+    pdfDescription: copy.pdfDescription || `Resumo executivo, metodo usado, numeros finais e pontos de revisao do mapeamento de ${domainLabel}.`,
     reviewLabels: {
-      erros: 'Painéis com falha ao localizar workbook ou abrir o fluxo padrão',
-      semTabela: 'Fontes sem tabela identificável por SQL ou lineage',
-      semDatasource: 'Painéis sem datasource encontrado no workbook ou lineage'
+      erros: copy.reviewLabels?.erros || 'Paineis com falha ao localizar workbook ou abrir o fluxo padrao',
+      semTabela: copy.reviewLabels?.semTabela || 'Fontes sem tabela identificavel por SQL ou lineage',
+      semDatasource: copy.reviewLabels?.semDatasource || 'Paineis sem datasource encontrado no workbook ou lineage'
     }
-  },
-  hr: {
-    uiLabel: 'HR',
-    brand: 'HR',
-    summaryEyebrow: 'Tableau | HR | Inventário técnico',
-    summaryTitle: 'Mapeamento de fontes e tabelas dos dashboards de HR',
-    summaryLead: 'Inventário consolidado para apoiar leitura da origem dos dados, dependências entre relatórios e priorização do mapeamento de HR.',
-    analyticalEyebrow: 'Analytical | HR',
-    analyticalTitle: 'Visão analítica das fontes e tabelas mapeadas',
-    analyticalLead: 'Indicadores e gráficos calculados a partir da base consolidada do segmento de HR.',
-    detailedEyebrow: 'Detailed | HR',
-    detailedTitle: 'Consulta detalhada do inventário',
-    detailedLead: 'Explore as linhas do inventário de HR com filtros por relatório, schema, status e busca livre.',
-    excelDescription: 'Base consolidada com relatório, datasource, link, schema e tabela para o segmento de HR.',
-    pdfDescription: 'Resumo executivo, método usado, números finais e pontos de revisão do mapeamento de HR.',
-    reviewLabels: {
-      erros: 'Painéis com falha ao localizar workbook ou abrir o fluxo padrão',
-      semTabela: 'Fontes sem tabela identificável por SQL ou lineage',
-      semDatasource: 'Painéis sem datasource encontrado no workbook ou lineage'
-    }
-  }
-};
+  };
+}
 
 const PAGE_LABELS = {
   summary: 'Resumo',
@@ -63,11 +56,14 @@ const similarityBands = [
 
 const bodyPage = document.body.dataset.page || 'summary';
 const navLinks = Array.from(document.querySelectorAll('.nav-item'));
-const segmentLinks = Array.from(document.querySelectorAll('[data-segment-link]'));
+const segmentSelect = document.querySelector('[data-segment-select]');
+const segmentHint = document.querySelector('[data-segment-hint]');
 const currentUrl = new URL(window.location.href);
-const segmentKey = currentUrl.searchParams.get('segment') === 'hr' ? 'hr' : 'finance';
-const segment = SEGMENTS[segmentKey];
-const dataBase = `./data/${segmentKey}`;
+const requestedSegmentKey = currentUrl.searchParams.get('segment') || DEFAULT_SEGMENT_KEY;
+let segmentCatalog = [];
+let segmentKey = requestedSegmentKey;
+let segment = buildSegmentCopy({ segment: segmentKey });
+let dataBase = `./data/${segmentKey}`;
 let similarityState = null;
 
 function normalizePath(pathname) {
@@ -81,15 +77,69 @@ function withSegment(href, targetSegment = segmentKey) {
   return `${url.pathname}${url.search}${url.hash}`;
 }
 
+function buildSegmentCatalogEntry(entry = {}) {
+  return {
+    ...entry,
+    uiLabel: entry.uiLabel || formatSegmentLabel(entry.segment),
+    brand: entry.brand || formatSegmentLabel(entry.segment),
+    domainLabel: entry.domainLabel || entry.brand || entry.uiLabel || formatSegmentLabel(entry.segment),
+    copy: buildSegmentCopy(entry)
+  };
+}
+
+function resolveAvailableSegmentKey(entries) {
+  const validEntries = entries.filter((entry) => entry.available !== false);
+  if (!validEntries.length) return requestedSegmentKey || DEFAULT_SEGMENT_KEY;
+  const requested = validEntries.find((entry) => entry.segment === requestedSegmentKey);
+  return requested?.segment || validEntries[0].segment;
+}
+
+function syncSegmentState(entries) {
+  segmentCatalog = entries;
+  segmentKey = resolveAvailableSegmentKey(entries);
+  const activeEntry = entries.find((entry) => entry.segment === segmentKey) || {
+    segment: segmentKey,
+    uiLabel: formatSegmentLabel(segmentKey),
+    brand: formatSegmentLabel(segmentKey),
+    domainLabel: formatSegmentLabel(segmentKey),
+    copy: {}
+  };
+
+  segment = buildSegmentCopy(activeEntry);
+  dataBase = `./data/${segmentKey}`;
+}
+
+function populateSegmentSelect(entries) {
+  if (!segmentSelect) return;
+  clearNode(segmentSelect);
+
+  const availableEntries = entries.filter((entry) => entry.available !== false);
+  const sourceEntries = availableEntries.length ? availableEntries : entries;
+
+  for (const entry of sourceEntries) {
+    const option = document.createElement('option');
+    option.value = entry.segment;
+    option.textContent = entry.uiLabel || formatSegmentLabel(entry.segment);
+    option.disabled = entry.available === false;
+    if (entry.available === false && entry.error) {
+      option.textContent = `${option.textContent} (indisponivel)`;
+    }
+    segmentSelect.appendChild(option);
+  }
+
+  if (!segmentSelect.options.length) {
+    const option = document.createElement('option');
+    option.value = segmentKey;
+    option.textContent = formatSegmentLabel(segmentKey);
+    segmentSelect.appendChild(option);
+  }
+
+  segmentSelect.value = segmentKey;
+}
+
 function decorateSegmentAwareLinks() {
   for (const link of navLinks) {
     link.setAttribute('href', withSegment(link.getAttribute('href') || ''));
-  }
-
-  for (const link of segmentLinks) {
-    const targetSegment = link.dataset.segmentLink || segmentKey;
-    link.setAttribute('href', withSegment(link.getAttribute('href') || window.location.pathname, targetSegment));
-    link.classList.toggle('active', targetSegment === segmentKey);
   }
 }
 
@@ -195,22 +245,45 @@ async function fetchJson(filePath) {
 async function loadSegmentsCatalog() {
   try {
     const payload = await fetchJson('./data/segments.json');
-    for (const link of segmentLinks) {
-      const targetSegment = link.dataset.segmentLink;
-      const entry = payload.segments.find((item) => item.segment === targetSegment);
-      if (!entry?.available) {
-        link.classList.add('is-disabled');
-        link.setAttribute('aria-disabled', 'true');
-        link.title = entry?.error || 'Segmento ainda não disponível';
-      }
+    const entries = Array.isArray(payload?.segments) && payload.segments.length
+      ? payload.segments.map(buildSegmentCatalogEntry)
+      : [{
+          segment: requestedSegmentKey,
+          uiLabel: formatSegmentLabel(requestedSegmentKey),
+          brand: formatSegmentLabel(requestedSegmentKey),
+          domainLabel: formatSegmentLabel(requestedSegmentKey),
+          available: true,
+          copy: {}
+        }];
+
+    syncSegmentState(entries);
+    populateSegmentSelect(entries);
+
+    if (segmentHint) {
+      const activeEntry = entries.find((entry) => entry.segment === segmentKey);
+      segmentHint.textContent = activeEntry?.available === false
+        ? activeEntry.error || 'Segmento indisponivel no momento.'
+        : 'Troque de segmento e mantenha a pagina atual.';
     }
   } catch {
-    // Optional. Segment links still work when the catalog is unavailable.
+    const fallbackEntries = [{
+      segment: requestedSegmentKey,
+      uiLabel: formatSegmentLabel(requestedSegmentKey),
+      brand: formatSegmentLabel(requestedSegmentKey),
+      domainLabel: formatSegmentLabel(requestedSegmentKey),
+      available: true,
+      copy: {}
+    }];
+    syncSegmentState(fallbackEntries);
+    populateSegmentSelect(fallbackEntries);
+    if (segmentHint) {
+      segmentHint.textContent = 'Troque de segmento e mantenha a pagina atual.';
+    }
   }
 }
 
 function applySegmentCopy() {
-  document.title = `${PAGE_LABELS[bodyPage] || 'Mapa'} | ${segment.brand}`;
+  document.title = `${PAGE_LABELS[bodyPage] || 'Mapa'} | ${segment.brand} | ${PROJECT_NAME}`;
   setText('#brandName', segment.brand);
   setText('#summaryEyebrow', segment.summaryEyebrow);
   setText('#summaryTitle', segment.summaryTitle);
@@ -435,6 +508,8 @@ async function renderDetailedPage() {
   };
 
   renderSimilarityCard(rows);
+  populateSelect('originFilter', data.filters?.origins || []);
+  populateSelect('fieldTypeFilter', data.filters?.fieldTypes || []);
   populateSelect('statusFilter', data.filters?.statuses || []);
   populateSelect('schemaFilter', data.filters?.schemas || []);
   populateSelect('reportFilter', data.filters?.reports || []);
@@ -445,7 +520,7 @@ async function renderDetailedPage() {
     renderDetailRows(state);
   };
 
-  for (const id of ['searchInput', 'statusFilter', 'schemaFilter', 'reportFilter']) {
+  for (const id of ['searchInput', 'originFilter', 'fieldTypeFilter', 'statusFilter', 'schemaFilter', 'reportFilter']) {
     document.getElementById(id)?.addEventListener('input', applyAndRender);
     document.getElementById(id)?.addEventListener('change', applyAndRender);
   }
@@ -827,24 +902,33 @@ function populateSelect(id, values) {
 
 function filterDetailRows(rows) {
   const term = normalizeText(document.getElementById('searchInput')?.value);
+  const origem = document.getElementById('originFilter')?.value || '';
+  const fieldType = document.getElementById('fieldTypeFilter')?.value || '';
   const status = document.getElementById('statusFilter')?.value || '';
   const schema = document.getElementById('schemaFilter')?.value || '';
   const report = document.getElementById('reportFilter')?.value || '';
 
   return rows.filter((row) => {
     const rowSchema = row.schema || 'Sem schema';
+    const rowOrigem = row.origem || 'Nao informado';
+    const rowFieldType = row.tipo_campo || 'Nao informado';
+    const matchesOrigem = !origem || rowOrigem === origem;
+    const matchesFieldType = !fieldType || rowFieldType === fieldType;
     const matchesStatus = !status || row.status === status;
     const matchesSchema = !schema || rowSchema === schema;
     const matchesReport = !report || row.relatorio === report;
     const haystack = normalizeText([
       row.relatorio,
       row.datasource,
+      row.origem,
+      row.campos,
+      row.tipo_campo,
       row.schema,
       row.tabela,
       row.status,
       row.link_datasource
     ].join(' '));
-    return matchesStatus && matchesSchema && matchesReport && (!term || haystack.includes(term));
+    return matchesOrigem && matchesFieldType && matchesStatus && matchesSchema && matchesReport && (!term || haystack.includes(term));
   });
 }
 
@@ -863,13 +947,16 @@ function renderDetailRows(state) {
   const visibleRows = state.filteredRows.slice(start, start + state.pageSize);
 
   if (!visibleRows.length) {
-    table.appendChild(createEmptyMessage('Nenhuma linha encontrada para os filtros selecionados.', 6));
+    table.appendChild(createEmptyMessage('Nenhuma linha encontrada para os filtros selecionados.', 9));
   }
 
   for (const row of visibleRows) {
     const tableRow = document.createElement('tr');
     appendCell(tableRow, row.relatorio || 'Sem relatorio', 'wide-cell');
     appendCell(tableRow, row.datasource || 'Sem datasource');
+    appendCell(tableRow, row.origem || 'Nao informado');
+    appendCell(tableRow, row.campos || 'Sem campos de lineage', 'field-list-cell');
+    appendCell(tableRow, row.tipo_campo || 'Nao informado');
     appendCell(tableRow, row.schema || 'Sem schema');
     appendCell(tableRow, row.tabela || 'Sem tabela');
 
@@ -918,19 +1005,31 @@ function createLinkNode(row) {
   return note;
 }
 
-decorateSegmentAwareLinks();
-applySegmentCopy();
-loadSegmentsCatalog();
 window.addEventListener('scroll', updateActiveLink, { passive: true });
 window.addEventListener('resize', updateActiveLink);
 updateActiveLink();
 
-loadManifest().then(() => {
+if (segmentSelect) {
+  segmentSelect.addEventListener('change', (event) => {
+    const nextSegment = event.target.value || segmentKey;
+    window.location.href = withSegment(window.location.href, nextSegment);
+  });
+}
+
+async function initializeApp() {
+  await loadSegmentsCatalog();
+  decorateSegmentAwareLinks();
+  applySegmentCopy();
+
+  await loadManifest();
+
   if (bodyPage === 'analytical') {
-    renderAnalyticalPage();
+    await renderAnalyticalPage();
   }
 
   if (bodyPage === 'detailed') {
-    renderDetailedPage();
+    await renderDetailedPage();
   }
-});
+}
+
+initializeApp();

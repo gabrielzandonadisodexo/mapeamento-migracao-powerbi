@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T20:18:52.980Z",
+  "generatedAt": "2026-05-04T12:52:20.354Z",
   "summary": {
     "paineis": 21,
     "linhas": 370,
@@ -11,6 +11,12 @@
     "semTabela": 0
   },
   "filters": {
+    "origins": [
+      "Nao informado"
+    ],
+    "fieldTypes": [
+      "Nao informado"
+    ],
     "schemas": [
       "bicompras",
       "bisilver",
@@ -56,6 +62,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -66,6 +75,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -76,6 +88,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -86,6 +101,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -96,6 +114,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -106,6 +127,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -116,6 +140,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -126,6 +153,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1057/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -136,6 +166,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1057/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -146,6 +179,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1057/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -156,6 +192,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/HorasExtraseAbsentesmo/AnalticoHorasExtras",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1057/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -166,6 +205,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -176,6 +218,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -186,6 +231,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -196,6 +244,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -206,6 +257,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -216,6 +270,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -226,6 +283,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -236,6 +296,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -246,6 +309,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -256,6 +322,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -266,6 +335,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -276,6 +348,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -286,6 +361,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -296,6 +374,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days_Segmentos",
       "status": "Mapeado"
@@ -306,6 +387,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -316,6 +400,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Elegiveis cota aprendiz$'",
       "status": "Mapeado"
@@ -326,6 +413,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "METAS",
       "status": "Mapeado"
@@ -336,6 +426,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -346,6 +439,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -356,6 +452,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -366,6 +465,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -376,6 +478,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -386,6 +491,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -396,6 +504,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days_Segmentos",
       "status": "Mapeado"
@@ -406,6 +517,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -416,6 +530,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Elegiveis cota aprendiz$'",
       "status": "Mapeado"
@@ -426,6 +543,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "METAS",
       "status": "Mapeado"
@@ -436,6 +556,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -446,6 +569,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -456,6 +582,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -466,6 +595,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -476,6 +608,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -486,6 +621,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -496,6 +634,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days_Segmentos",
       "status": "Mapeado"
@@ -506,6 +647,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -516,6 +660,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Elegiveis cota aprendiz$'",
       "status": "Mapeado"
@@ -526,6 +673,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "METAS",
       "status": "Mapeado"
@@ -536,6 +686,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -546,6 +699,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -556,6 +712,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -566,6 +725,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -576,6 +738,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -586,6 +751,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -596,6 +764,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days_Segmentos",
       "status": "Mapeado"
@@ -606,6 +777,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -616,6 +790,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Elegiveis cota aprendiz$'",
       "status": "Mapeado"
@@ -626,6 +803,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "METAS",
       "status": "Mapeado"
@@ -636,6 +816,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -646,6 +829,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -656,6 +842,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -666,6 +855,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -676,6 +868,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -686,6 +881,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -696,6 +894,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days_Segmentos",
       "status": "Mapeado"
@@ -706,6 +907,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -716,6 +920,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Elegiveis cota aprendiz$'",
       "status": "Mapeado"
@@ -726,6 +933,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresRH_16860832510040/IndicadoresdeRH",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/638/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "METAS",
       "status": "Mapeado"
@@ -736,6 +946,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basecolaboradoresgeral/Basecolaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -746,6 +959,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basecolaboradoresgeral/Basecolaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -756,6 +972,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basecolaboradoresgeral/Basecolaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -766,6 +985,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basecolaboradoresgeral/Basecolaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -776,6 +998,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basecolaboradoresgeral/Basecolaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -786,6 +1011,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basecolaboradoresgeral/Basecolaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -796,6 +1024,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basecolaboradoresgeral/Basecolaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -806,6 +1037,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -816,6 +1050,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -826,6 +1063,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -836,6 +1076,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -846,6 +1089,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -856,6 +1102,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -866,6 +1115,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -876,6 +1128,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Promoção",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48036/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "PORTALBI",
       "tabela": "FILIAL_COMPLEMENTO",
       "status": "Mapeado"
@@ -886,6 +1141,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Promoção",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48036/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_PROMOCAO",
       "status": "Mapeado"
@@ -896,6 +1154,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Promoção",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48036/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "PORTALBI",
       "tabela": "FILIAL_COMPLEMENTO@TECNISAW",
       "status": "Mapeado"
@@ -906,6 +1167,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha | Projeto : Fonte de Dados Corporativa",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1065/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -916,6 +1180,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha | Projeto : Fonte de Dados Corporativa",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1065/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -926,6 +1193,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha | Projeto : Fonte de Dados Corporativa",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1065/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -936,6 +1206,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha | Projeto : Fonte de Dados Corporativa",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1065/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -946,6 +1219,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "RH - Colaborador Folha | Projeto : Fonte de Dados Corporativa",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1065/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_PROMOCAO",
       "status": "Mapeado"
@@ -956,6 +1232,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "tbElegibilidade_Cargo (db_Elegilidade_Cargos)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1065/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -966,6 +1245,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "tbElegibilidade_Cargo (db_Elegilidade_Cargos)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1065/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -976,6 +1258,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "tbElegibilidade_Cargo (db_Elegilidade_Cargos)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1065/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -986,6 +1271,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "tbElegibilidade_Cargo (db_Elegilidade_Cargos)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1065/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -996,6 +1284,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
       "datasource": "tbElegibilidade_Cargo (db_Elegilidade_Cargos)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1065/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_PROMOCAO",
       "status": "Mapeado"
@@ -1006,6 +1297,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BookdeIndicadoresdePessoas/DashboardsdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -1016,6 +1310,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BookdeIndicadoresdePessoas/DashboardsdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -1026,6 +1323,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BookdeIndicadoresdePessoas/DashboardsdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -1036,6 +1336,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BookdeIndicadoresdePessoas/DashboardsdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -1046,6 +1349,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BookdeIndicadoresdePessoas/DashboardsdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -1056,6 +1362,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BookdeIndicadoresdePessoas/DashboardsdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -1066,6 +1375,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BookdeIndicadoresdePessoas/DashboardsdeRH",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -1076,6 +1388,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ProjetoPonto-DashboarddeQuantidadedeHoras/ProjetoPonto-EventosAnaltico",
       "datasource": "RH - Colaborador Ponto Analitico RLS V2",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/57887/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_EVT_RH_PONTO_ANALITICO",
       "status": "Mapeado"
@@ -1086,6 +1401,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ProjetoPonto-DashboarddeQuantidadedeHoras/ProjetoPonto-EventosAnaltico",
       "datasource": "RH - Colaborador Ponto Analitico RLS V2",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/57887/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "D_USUARIO_FILIAL",
       "status": "Mapeado"
@@ -1096,6 +1414,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ProjetoPonto-DashboarddeQuantidadedeHoras/ProjetoPonto-EventosAnaltico",
       "datasource": "RH - Colaborador Ponto Sintetico RLS",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/58934/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_EVT_RH_PONTO_CONSOLIDADO",
       "status": "Mapeado"
@@ -1106,6 +1427,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ProjetoPonto-DashboarddeQuantidadedeHoras/ProjetoPonto-EventosAnaltico",
       "datasource": "RH - Colaborador Ponto Sintetico RLS",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/58934/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "D_USUARIO_FILIAL",
       "status": "Mapeado"
@@ -1116,6 +1440,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ProjetoPonto-DashboarddeQuantidadedeHoras/ProjetoPonto-EventosAnaltico",
       "datasource": "Ondas_Projeto_Ponto",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1275/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -1126,6 +1453,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ProjetoPonto-DashboarddeQuantidadedeHoras/ProjetoPonto-EventosAnaltico",
       "datasource": "Ondas_Projeto_Ponto",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1275/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_EVT_RH_PONTO_CONSOLIDADO",
       "status": "Mapeado"
@@ -1136,6 +1466,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ProjetoPonto-DashboarddeQuantidadedeHoras/ProjetoPonto-EventosAnaltico",
       "datasource": "Ondas_Projeto_Ponto",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1275/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_EVT_RH_PONTO_ANALITICO",
       "status": "Mapeado"
@@ -1146,6 +1479,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basedefriasemaberto/Basedefriasemaberto",
       "datasource": "RH - Colaborador Ponto Sintetico",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/17222/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_EVT_RH_PONTO_CONSOLIDADO",
       "status": "Mapeado"
@@ -1156,6 +1492,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basedefriasemaberto/Basedefriasemaberto",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -1166,6 +1505,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basedefriasemaberto/Basedefriasemaberto",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -1176,6 +1518,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basedefriasemaberto/Basedefriasemaberto",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_FILIAL",
       "status": "Mapeado"
@@ -1186,6 +1531,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Basedefriasemaberto/Basedefriasemaberto",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_PROGRAMACAO_FERIAS",
       "status": "Mapeado"
@@ -1196,6 +1544,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ModelodeTrabalho/ModelodeTrabalho",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -1206,6 +1557,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ModelodeTrabalho/ModelodeTrabalho",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -1216,6 +1570,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ModelodeTrabalho/ModelodeTrabalho",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -1226,6 +1583,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ModelodeTrabalho/ModelodeTrabalho",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -1236,6 +1596,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ModelodeTrabalho/ModelodeTrabalho",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -1246,6 +1609,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ModelodeTrabalho/ModelodeTrabalho",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -1256,6 +1622,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ModelodeTrabalho/ModelodeTrabalho",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -1266,6 +1635,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Bancodehoras/Bancodehoras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -1276,6 +1648,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Bancodehoras/Bancodehoras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -1286,6 +1661,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Bancodehoras/Bancodehoras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -1296,6 +1674,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Bancodehoras/Bancodehoras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -1306,6 +1687,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Bancodehoras/Bancodehoras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -1316,6 +1700,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Bancodehoras/Bancodehoras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -1326,6 +1713,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Bancodehoras/Bancodehoras",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -1336,6 +1726,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -1346,6 +1739,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -1356,6 +1752,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -1366,6 +1765,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -1376,6 +1778,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -1386,6 +1791,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -1396,6 +1804,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -1406,6 +1817,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -1416,6 +1830,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -1426,6 +1843,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -1436,6 +1856,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -1446,6 +1869,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -1456,6 +1882,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days",
       "status": "Mapeado"
@@ -1466,6 +1895,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Elegiveis cota aprendiz$'",
       "status": "Mapeado"
@@ -1476,6 +1908,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Women Leardership$'",
       "status": "Mapeado"
@@ -1486,6 +1921,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Promoções_Internas",
       "status": "Mapeado"
@@ -1496,6 +1934,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "METAS",
       "status": "Mapeado"
@@ -1506,6 +1947,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Other_KPIs_HR",
       "status": "Mapeado"
@@ -1516,6 +1960,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -1526,6 +1973,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days_Segmentos",
       "status": "Mapeado"
@@ -1536,6 +1986,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -1546,6 +1999,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -1556,6 +2012,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -1566,6 +2025,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -1576,6 +2038,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -1586,6 +2051,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days",
       "status": "Mapeado"
@@ -1596,6 +2064,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Elegiveis cota aprendiz$'",
       "status": "Mapeado"
@@ -1606,6 +2077,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Women Leardership$'",
       "status": "Mapeado"
@@ -1616,6 +2090,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Promoções_Internas",
       "status": "Mapeado"
@@ -1626,6 +2103,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "METAS",
       "status": "Mapeado"
@@ -1636,6 +2116,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Other_KPIs_HR",
       "status": "Mapeado"
@@ -1646,6 +2129,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -1656,6 +2142,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days_Segmentos",
       "status": "Mapeado"
@@ -1666,6 +2155,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -1676,6 +2168,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -1686,6 +2181,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -1696,6 +2194,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -1706,6 +2207,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -1716,6 +2220,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days",
       "status": "Mapeado"
@@ -1726,6 +2233,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Elegiveis cota aprendiz$'",
       "status": "Mapeado"
@@ -1736,6 +2246,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Women Leardership$'",
       "status": "Mapeado"
@@ -1746,6 +2259,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Promoções_Internas",
       "status": "Mapeado"
@@ -1756,6 +2272,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "METAS",
       "status": "Mapeado"
@@ -1766,6 +2285,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Other_KPIs_HR",
       "status": "Mapeado"
@@ -1776,6 +2298,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -1786,6 +2311,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days_Segmentos",
       "status": "Mapeado"
@@ -1796,6 +2324,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -1806,6 +2337,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -1816,6 +2350,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -1826,6 +2363,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -1836,6 +2376,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -1846,6 +2389,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days",
       "status": "Mapeado"
@@ -1856,6 +2402,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Elegiveis cota aprendiz$'",
       "status": "Mapeado"
@@ -1866,6 +2415,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Women Leardership$'",
       "status": "Mapeado"
@@ -1876,6 +2428,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Promoções_Internas",
       "status": "Mapeado"
@@ -1886,6 +2441,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "METAS",
       "status": "Mapeado"
@@ -1896,6 +2454,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Other_KPIs_HR",
       "status": "Mapeado"
@@ -1906,6 +2467,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -1916,6 +2480,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days_Segmentos",
       "status": "Mapeado"
@@ -1926,6 +2493,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -1936,6 +2506,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -1946,6 +2519,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -1956,6 +2532,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -1966,6 +2545,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -1976,6 +2558,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days",
       "status": "Mapeado"
@@ -1986,6 +2571,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Elegiveis cota aprendiz$'",
       "status": "Mapeado"
@@ -1996,6 +2584,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'Women Leardership$'",
       "status": "Mapeado"
@@ -2006,6 +2597,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Promoções_Internas",
       "status": "Mapeado"
@@ -2016,6 +2610,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "METAS",
       "status": "Mapeado"
@@ -2026,6 +2623,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Other_KPIs_HR",
       "status": "Mapeado"
@@ -2036,6 +2636,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -2046,6 +2649,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY25-RegrettableBoostereDemissional/METASDERHFY25",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1853/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Absenteismo_Days_Segmentos",
       "status": "Mapeado"
@@ -2056,6 +2662,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -2066,6 +2675,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -2076,6 +2688,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -2086,6 +2701,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2096,6 +2714,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -2106,6 +2727,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -2116,6 +2740,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -2126,6 +2753,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "DE-PARA_BU",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -2136,6 +2766,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "DE-PARA_BU",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2146,6 +2779,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "DE-PARA_BU",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -2156,6 +2792,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "DE-PARA_BU",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -2166,6 +2805,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "DE-PARA_BU",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -2176,6 +2818,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "DE-PARA_BU",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -2186,6 +2831,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "DE-PARA_BU",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'DE PARA$'",
       "status": "Mapeado"
@@ -2196,6 +2844,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -2206,6 +2857,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2216,6 +2870,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -2226,6 +2883,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -2236,6 +2896,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -2246,6 +2909,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -2256,6 +2922,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'DE PARA$'",
       "status": "Mapeado"
@@ -2266,6 +2935,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -2276,6 +2948,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2286,6 +2961,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -2296,6 +2974,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -2306,6 +2987,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -2316,6 +3000,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -2326,6 +3013,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "EXPURGO_PEDIDO_DEMISSAO_FY24 Extração",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'DE PARA$'",
       "status": "Mapeado"
@@ -2336,6 +3026,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -2346,6 +3039,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2356,6 +3052,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -2366,6 +3065,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -2376,6 +3078,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -2386,6 +3091,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -2396,6 +3104,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "METAS_HE_ABSENTEISMO",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'DE PARA$'",
       "status": "Mapeado"
@@ -2406,6 +3117,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -2416,6 +3130,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2426,6 +3143,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -2436,6 +3156,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -2446,6 +3169,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -2456,6 +3182,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -2466,6 +3195,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Other_KPIs_HR",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'DE PARA$'",
       "status": "Mapeado"
@@ -2476,6 +3208,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -2486,6 +3221,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2496,6 +3234,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -2506,6 +3247,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -2516,6 +3260,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -2526,6 +3273,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -2536,6 +3286,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WokforcePlanning/WorkforcePlanning",
       "datasource": "Promoções_Internas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2103/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "'DE PARA$'",
       "status": "Mapeado"
@@ -2546,6 +3299,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeChamadoseWorkflows/Painel0-Home",
       "datasource": "dCalendario",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2227/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -2556,6 +3312,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeChamadoseWorkflows/Painel0-Home",
       "datasource": "fChamadosEmAberto",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2227/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -2566,6 +3325,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeChamadoseWorkflows/Painel0-Home",
       "datasource": "fChamadosResolvidos",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2227/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -2576,6 +3338,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeChamadoseWorkflows/Painel0-Home",
       "datasource": "fWorkflowsEmAberto",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2227/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -2586,6 +3351,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeChamadoseWorkflows/Painel0-Home",
       "datasource": "fWorkflowsResolvidos",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2227/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -2596,6 +3364,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -2606,6 +3377,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -2616,6 +3390,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -2626,6 +3403,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2636,6 +3416,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -2646,6 +3429,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -2656,6 +3442,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -2666,6 +3455,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/700/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -2676,6 +3468,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/700/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2686,6 +3481,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/700/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -2696,6 +3494,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "Elegiveis cota aprendiz (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/700/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -2706,6 +3507,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "PCD (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/700/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -2716,6 +3520,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "PCD (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/700/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2726,6 +3533,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "PCD (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/700/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_COLABORADOR_FOLHA_SAL",
       "status": "Mapeado"
@@ -2736,6 +3546,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Visoconsolidada/Consolidadodedados",
       "datasource": "PCD (Tableau)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/700/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
       "status": "Mapeado"
@@ -2746,6 +3559,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ZonaPosicionamentoSalarial/ZonasdePosicionamentoSalarial",
       "datasource": "RH - Base_Enios_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/52187/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Extract",
       "status": "Mapeado"
@@ -2756,6 +3572,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ZonaPosicionamentoSalarial/ZonasdePosicionamentoSalarial",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -2766,6 +3585,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ZonaPosicionamentoSalarial/ZonasdePosicionamentoSalarial",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -2776,6 +3598,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ZonaPosicionamentoSalarial/ZonasdePosicionamentoSalarial",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -2786,6 +3611,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ZonaPosicionamentoSalarial/ZonasdePosicionamentoSalarial",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2796,6 +3624,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ZonaPosicionamentoSalarial/ZonasdePosicionamentoSalarial",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -2806,6 +3637,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ZonaPosicionamentoSalarial/ZonasdePosicionamentoSalarial",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -2816,6 +3650,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ZonaPosicionamentoSalarial/ZonasdePosicionamentoSalarial",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -2826,6 +3663,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -2836,6 +3676,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -2846,6 +3689,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -2856,6 +3702,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -2866,6 +3715,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -2876,6 +3728,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -2886,6 +3741,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -2896,6 +3754,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -2906,6 +3767,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -2916,6 +3780,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_FILIAL",
       "status": "Mapeado"
@@ -2926,6 +3793,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_PROGRAMACAO_FERIAS",
       "status": "Mapeado"
@@ -2936,6 +3806,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH STEP Afastamento",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48064/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -2946,6 +3819,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH STEP Afastamento",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48064/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_APDATA_STEP_AFASTAMENTO",
       "status": "Mapeado"
@@ -2956,6 +3832,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH STEP Afastamento",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48064/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -2966,6 +3845,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH STEP Afastamento",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48064/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial_complemento",
       "status": "Mapeado"
@@ -2976,6 +3858,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "RH STEP Afastamento",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48064/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -2986,6 +3871,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -2996,6 +3884,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -3006,6 +3897,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_PROGRAMACAO_FERIAS",
       "status": "Mapeado"
@@ -3016,6 +3910,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_APDATA_STEP_AFASTAMENTO",
       "status": "Mapeado"
@@ -3026,6 +3923,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Base_Tableau",
       "status": "Mapeado"
@@ -3036,6 +3936,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Plan1",
       "status": "Mapeado"
@@ -3046,6 +3949,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -3056,6 +3962,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -3066,6 +3975,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_PROGRAMACAO_FERIAS",
       "status": "Mapeado"
@@ -3076,6 +3988,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_APDATA_STEP_AFASTAMENTO",
       "status": "Mapeado"
@@ -3086,6 +4001,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Base_Tableau",
       "status": "Mapeado"
@@ -3096,6 +4014,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2183/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Plan1",
       "status": "Mapeado"
@@ -3106,6 +4027,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdePromoesInternas/PromoesInternas",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -3116,6 +4040,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdePromoesInternas/PromoesInternas",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -3126,6 +4053,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdePromoesInternas/PromoesInternas",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -3136,6 +4066,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdePromoesInternas/PromoesInternas",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -3146,6 +4079,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdePromoesInternas/PromoesInternas",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -3156,6 +4092,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdePromoesInternas/PromoesInternas",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -3166,6 +4105,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdePromoesInternas/PromoesInternas",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -3176,6 +4118,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -3186,6 +4131,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -3196,6 +4144,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -3206,6 +4157,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -3216,6 +4170,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -3226,6 +4183,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -3236,6 +4196,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -3246,6 +4209,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -3256,6 +4222,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -3266,6 +4235,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_D_FILIAL",
       "status": "Mapeado"
@@ -3276,6 +4248,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH - Programação de Férias",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48035/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_PROGRAMACAO_FERIAS",
       "status": "Mapeado"
@@ -3286,6 +4261,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH STEP Afastamento",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48064/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -3296,6 +4274,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH STEP Afastamento",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48064/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_APDATA_STEP_AFASTAMENTO",
       "status": "Mapeado"
@@ -3306,6 +4287,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH STEP Afastamento",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48064/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -3316,6 +4300,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH STEP Afastamento",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48064/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial_complemento",
       "status": "Mapeado"
@@ -3326,6 +4313,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "RH STEP Afastamento",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48064/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -3336,6 +4326,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -3346,6 +4339,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -3356,6 +4352,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_PROGRAMACAO_FERIAS",
       "status": "Mapeado"
@@ -3366,6 +4365,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_APDATA_STEP_AFASTAMENTO",
       "status": "Mapeado"
@@ -3376,6 +4378,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Base_Tableau",
       "status": "Mapeado"
@@ -3386,6 +4391,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "Base_Tableau",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Plan1",
       "status": "Mapeado"
@@ -3396,6 +4404,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -3406,6 +4417,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -3416,6 +4430,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "F_PROGRAMACAO_FERIAS",
       "status": "Mapeado"
@@ -3426,6 +4443,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_APDATA_STEP_AFASTAMENTO",
       "status": "Mapeado"
@@ -3436,6 +4456,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Base_Tableau",
       "status": "Mapeado"
@@ -3446,6 +4469,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresdeModelodeTrabalho-HomeOffice_17522412067850/DashboardHomeOffice-Colaboradores",
       "datasource": "reserva_mesas_por_colaborador geral",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/2169/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "Plan1",
       "status": "Mapeado"
@@ -3456,6 +4482,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
       "datasource": "BIVARREDURA - Filial",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/23931/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "PORTALBI",
       "tabela": "filial_endereco",
       "status": "Mapeado"
@@ -3466,6 +4495,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
       "datasource": "BIVARREDURA - Filial",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/23931/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "PORTALBI",
       "tabela": "filial_endereco@tecnisaw",
       "status": "Mapeado"
@@ -3476,6 +4508,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -3486,6 +4521,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -3496,6 +4534,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -3506,6 +4547,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -3516,6 +4560,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -3526,6 +4573,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -3536,6 +4586,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -3546,6 +4599,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
       "datasource": "RH STEP Abertura de Vagas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48063/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -3556,6 +4612,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PaineldeVagasOperacionais/AnlisesdeVagasOperacionais",
       "datasource": "RH STEP Abertura de Vagas",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/48063/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "VW_APDATA_STEP_ABERTURA_VAGAS",
       "status": "Mapeado"
@@ -3566,6 +4625,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -3576,6 +4638,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -3586,6 +4651,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -3596,6 +4664,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -3606,6 +4677,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -3616,6 +4690,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -3626,6 +4703,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -3636,6 +4716,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
       "datasource": "RH - Colaborador Folha | Projeto : Fonte de Dados Corporativa",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1009/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -3646,6 +4729,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
       "datasource": "RH - Colaborador Folha | Projeto : Fonte de Dados Corporativa",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1009/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -3656,6 +4742,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
       "datasource": "tbElegibilidade_Cargo (db_Elegilidade_Cargos)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1009/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR",
       "status": "Mapeado"
@@ -3666,6 +4755,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
       "datasource": "tbElegibilidade_Cargo (db_Elegilidade_Cargos)",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/workbooks/1009/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "D_COLABORADOR_NVL_CLR_COLUNAR",
       "status": "Mapeado"
@@ -3676,6 +4768,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WomenLeadership/IndicadoresWomenLeadership",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bicompras",
       "tabela": "d_filial",
       "status": "Mapeado"
@@ -3686,6 +4781,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WomenLeadership/IndicadoresWomenLeadership",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "F_APDATA_ABERTURA_VAGA_STEP",
       "status": "Mapeado"
@@ -3696,6 +4794,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WomenLeadership/IndicadoresWomenLeadership",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "DPESSOAL",
       "tabela": "VW_D_COLABORADOR_GRADE",
       "status": "Mapeado"
@@ -3706,6 +4807,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WomenLeadership/IndicadoresWomenLeadership",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "dpessoal",
       "tabela": "F_COLABORADOR_FOLHA",
       "status": "Mapeado"
@@ -3716,6 +4820,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WomenLeadership/IndicadoresWomenLeadership",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "portalbi",
       "tabela": "filial_complemento@tecnisaw",
       "status": "Mapeado"
@@ -3726,6 +4833,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WomenLeadership/IndicadoresWomenLeadership",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "bisilver",
       "tabela": "vw_estrutra_gerencial",
       "status": "Mapeado"
@@ -3736,6 +4846,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WomenLeadership/IndicadoresWomenLeadership",
       "datasource": "RH - Colaborador Folha",
       "link_datasource": "https://analyticsbi.sodexo.com.br/#/datasources/56353/lineage",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "ciscorp",
       "tabela": "filial",
       "status": "Mapeado"
@@ -3746,6 +4859,9 @@
       "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY26-RegrettableeDemissional/MetasdeRHFY26",
       "datasource": "",
       "link_datasource": "ERRO: O painel nao pode ser acessado com a sessao atual no Tableau.",
+      "origem": "",
+      "campos": "",
+      "tipo_campo": "",
       "schema": "",
       "tabela": "",
       "status": "Erro no workbook"
