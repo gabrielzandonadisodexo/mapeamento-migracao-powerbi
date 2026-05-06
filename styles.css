@@ -71,24 +71,41 @@ a {
 }
 
 .segment-switch {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
   display: grid;
-  gap: 8px;
+  gap: 10px;
+  padding: 12px;
+}
+
+.segment-switch-head {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
 }
 
 .segment-switch-control {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  display: grid;
+  gap: 8px;
+  padding: 10px 12px 12px;
   position: relative;
 }
 
 .segment-switch-control::after {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.92);
-  border-right: 2px solid rgba(255, 255, 255, 0.92);
+  border-bottom: 2px solid var(--sodexo-blue);
+  border-right: 2px solid var(--sodexo-blue);
   content: '';
   height: 10px;
   pointer-events: none;
   position: absolute;
   right: 16px;
-  top: 50%;
-  transform: translateY(-65%) rotate(45deg);
+  top: calc(50% + 12px);
+  transform: translateY(-50%) rotate(45deg);
   width: 10px;
 }
 
@@ -100,12 +117,33 @@ a {
   text-transform: uppercase;
 }
 
+.segment-switch-badge {
+  background: rgba(227, 6, 19, 0.16);
+  border: 1px solid rgba(227, 6, 19, 0.34);
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 4px 8px;
+  text-transform: uppercase;
+}
+
+.segment-switch-prefix {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .segment-switch select {
   appearance: none;
-  background: rgba(255, 255, 255, 0.12);
+  background: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: var(--radius);
-  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
+  color: var(--sodexo-blue);
   cursor: pointer;
   font: inherit;
   font-weight: 700;
@@ -113,9 +151,14 @@ a {
   padding: 10px 42px 10px 12px;
 }
 
+.segment-switch select:hover {
+  border-color: rgba(0, 32, 91, 0.34);
+  transform: translateY(-1px);
+}
+
 .segment-switch select:focus {
-  border-color: rgba(255, 255, 255, 0.52);
-  outline: 2px solid rgba(255, 255, 255, 0.28);
+  border-color: rgba(0, 32, 91, 0.46);
+  outline: 3px solid rgba(255, 255, 255, 0.24);
 }
 
 .segment-switch select option {
@@ -123,7 +166,7 @@ a {
 }
 
 .segment-switch-hint {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 12px;
   line-height: 1.4;
   margin: 0;
@@ -508,7 +551,7 @@ figcaption {
 .filters {
   display: grid;
   gap: 14px;
-  grid-template-columns: minmax(240px, 1.4fr) repeat(5, minmax(150px, 1fr));
+  grid-template-columns: minmax(240px, 1.4fr) repeat(4, minmax(150px, 1fr));
   margin-top: 18px;
 }
 
@@ -563,7 +606,7 @@ figcaption {
 .data-table {
   background: #ffffff;
   border-collapse: collapse;
-  min-width: 1480px;
+  min-width: 1340px;
   width: 100%;
 }
 

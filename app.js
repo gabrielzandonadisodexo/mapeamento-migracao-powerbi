@@ -30,7 +30,7 @@ function buildSegmentCopy(segmentMeta = {}) {
     detailedEyebrow: copy.detailedEyebrow || `Detailed | ${domainLabel}`,
     detailedTitle: copy.detailedTitle || 'Consulta detalhada do inventario',
     detailedLead: copy.detailedLead || `Explore as linhas do inventario de ${domainLabel} com filtros por relatorio, schema, status, origem e busca livre.`,
-    excelDescription: copy.excelDescription || `Base consolidada com relatorio, datasource, origem, campos, tipo de campo, schema e tabela para o segmento de ${domainLabel}.`,
+    excelDescription: copy.excelDescription || `Base consolidada em duas abas para o segmento de ${domainLabel}: Tabelas com relatorio, datasource, schema e tabela; e Campos com uma linha por relatorio e os campos de lineage consolidados.`,
     pdfDescription: copy.pdfDescription || `Resumo executivo, metodo usado, numeros finais e pontos de revisao do mapeamento de ${domainLabel}.`,
     reviewLabels: {
       erros: copy.reviewLabels?.erros || 'Paineis com falha ao localizar workbook ou abrir o fluxo padrao',
@@ -135,6 +135,27 @@ function populateSegmentSelect(entries) {
   }
 
   segmentSelect.value = segmentKey;
+}
+
+function formatSegmentChoices(labels) {
+  if (!labels.length) return '';
+  if (labels.length === 1) return labels[0];
+  if (labels.length === 2) return `${labels[0]} e ${labels[1]}`;
+  return `${labels.slice(0, -1).join(', ')} e ${labels[labels.length - 1]}`;
+}
+
+function buildSegmentHint(entries, activeEntry) {
+  const availableEntries = entries.filter((entry) => entry.available !== false);
+  const labels = availableEntries.map((entry) => entry.uiLabel || formatSegmentLabel(entry.segment));
+  const activeLabel = activeEntry?.uiLabel || formatSegmentLabel(segmentKey);
+  const alternateLabels = labels.filter((label) => label !== activeLabel);
+  const destinationText = formatSegmentChoices(alternateLabels);
+
+  if (!destinationText) {
+    return `Abra a lista de segmento para revisar a visao atual de ${activeLabel}.`;
+  }
+
+  return `Abra a lista de segmento para trocar de ${activeLabel} para ${destinationText} sem sair da pagina.`;
 }
 
 function decorateSegmentAwareLinks() {
@@ -263,7 +284,7 @@ async function loadSegmentsCatalog() {
       const activeEntry = entries.find((entry) => entry.segment === segmentKey);
       segmentHint.textContent = activeEntry?.available === false
         ? activeEntry.error || 'Segmento indisponivel no momento.'
-        : 'Clique no seletor para escolher entre Finance e HR e manter a pagina atual.';
+        : buildSegmentHint(entries, activeEntry);
     }
   } catch {
     const fallbackEntries = [{
@@ -277,7 +298,7 @@ async function loadSegmentsCatalog() {
     syncSegmentState(fallbackEntries);
     populateSegmentSelect(fallbackEntries);
     if (segmentHint) {
-      segmentHint.textContent = 'Clique no seletor para escolher entre Finance e HR e manter a pagina atual.';
+      segmentHint.textContent = buildSegmentHint(fallbackEntries, fallbackEntries[0]);
     }
   }
 }
@@ -509,7 +530,6 @@ async function renderDetailedPage() {
 
   renderSimilarityCard(rows);
   populateSelect('originFilter', data.filters?.origins || []);
-  populateSelect('fieldTypeFilter', data.filters?.fieldTypes || []);
   populateSelect('statusFilter', data.filters?.statuses || []);
   populateSelect('schemaFilter', data.filters?.schemas || []);
   populateSelect('reportFilter', data.filters?.reports || []);
@@ -520,7 +540,7 @@ async function renderDetailedPage() {
     renderDetailRows(state);
   };
 
-  for (const id of ['searchInput', 'originFilter', 'fieldTypeFilter', 'statusFilter', 'schemaFilter', 'reportFilter']) {
+  for (const id of ['searchInput', 'originFilter', 'statusFilter', 'schemaFilter', 'reportFilter']) {
     document.getElementById(id)?.addEventListener('input', applyAndRender);
     document.getElementById(id)?.addEventListener('change', applyAndRender);
   }
@@ -903,7 +923,6 @@ function populateSelect(id, values) {
 function filterDetailRows(rows) {
   const term = normalizeText(document.getElementById('searchInput')?.value);
   const origem = document.getElementById('originFilter')?.value || '';
-  const fieldType = document.getElementById('fieldTypeFilter')?.value || '';
   const status = document.getElementById('statusFilter')?.value || '';
   const schema = document.getElementById('schemaFilter')?.value || '';
   const report = document.getElementById('reportFilter')?.value || '';
@@ -911,9 +930,7 @@ function filterDetailRows(rows) {
   return rows.filter((row) => {
     const rowSchema = row.schema || 'Sem schema';
     const rowOrigem = row.origem || 'Nao informado';
-    const rowFieldType = row.tipo_campo || 'Nao informado';
     const matchesOrigem = !origem || rowOrigem === origem;
-    const matchesFieldType = !fieldType || rowFieldType === fieldType;
     const matchesStatus = !status || row.status === status;
     const matchesSchema = !schema || rowSchema === schema;
     const matchesReport = !report || row.relatorio === report;
@@ -922,13 +939,12 @@ function filterDetailRows(rows) {
       row.datasource,
       row.origem,
       row.campos,
-      row.tipo_campo,
       row.schema,
       row.tabela,
       row.status,
       row.link_datasource
     ].join(' '));
-    return matchesOrigem && matchesFieldType && matchesStatus && matchesSchema && matchesReport && (!term || haystack.includes(term));
+    return matchesOrigem && matchesStatus && matchesSchema && matchesReport && (!term || haystack.includes(term));
   });
 }
 
@@ -947,7 +963,7 @@ function renderDetailRows(state) {
   const visibleRows = state.filteredRows.slice(start, start + state.pageSize);
 
   if (!visibleRows.length) {
-    table.appendChild(createEmptyMessage('Nenhuma linha encontrada para os filtros selecionados.', 9));
+    table.appendChild(createEmptyMessage('Nenhuma linha encontrada para os filtros selecionados.', 8));
   }
 
   for (const row of visibleRows) {
@@ -956,7 +972,6 @@ function renderDetailRows(state) {
     appendCell(tableRow, row.datasource || 'Sem datasource');
     appendCell(tableRow, row.origem || 'Nao informado');
     appendCell(tableRow, row.campos || 'Sem campos de lineage', 'field-list-cell');
-    appendCell(tableRow, row.tipo_campo || 'Nao informado');
     appendCell(tableRow, row.schema || 'Sem schema');
     appendCell(tableRow, row.tabela || 'Sem tabela');
 

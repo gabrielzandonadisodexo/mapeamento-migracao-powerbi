@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T21:41:41.957Z",
+  "generatedAt": "2026-05-06T21:58:15.687Z",
   "segment": "finance",
   "brand": "Financas",
   "uiLabel": "Finance",
@@ -15,14 +15,14 @@
   },
   "files": {
     "excel": {
-      "size": 1050776,
-      "updatedAt": "06/05/2026, 18:41",
+      "size": 958122,
+      "updatedAt": "06/05/2026, 18:58",
       "name": "output_automacao_financas.xlsx",
       "href": "./downloads/finance/output_automacao_financas.xlsx"
     },
     "pdf": {
-      "size": 113435,
-      "updatedAt": "06/05/2026, 18:27",
+      "size": 117808,
+      "updatedAt": "06/05/2026, 18:41",
       "name": "documentacao_mapeamento_dashboards_financas.pdf",
       "href": "./downloads/finance/documentacao_mapeamento_dashboards_financas.pdf"
     }

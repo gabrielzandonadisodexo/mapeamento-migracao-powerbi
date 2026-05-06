@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>mapeamento-migracao-powerbi</title>
-  <link rel="stylesheet" href="./styles.css?v=20260504-segments-lineage">
+  <link rel="stylesheet" href="./styles.css?v=20260506-fields-dropdown">
 </head>
 <body data-page="summary">
   <aside class="sidebar" aria-label="Menu principal">
@@ -15,14 +15,18 @@
     </div>
 
     <div class="segment-switch" aria-label="Escolher segmento">
-      <label class="segment-switch-label" for="segmentSelect">Segmento</label>
+      <div class="segment-switch-head">
+        <label class="segment-switch-label" for="segmentSelect">Segmento</label>
+        <span class="segment-switch-badge">Dropdown</span>
+      </div>
       <div class="segment-switch-control">
-        <select id="segmentSelect" data-segment-select>
+        <span class="segment-switch-prefix">Clique para trocar a visao</span>
+        <select id="segmentSelect" data-segment-select aria-describedby="segmentHint">
           <option value="finance">Finance</option>
           <option value="hr">HR</option>
         </select>
       </div>
-      <p class="segment-switch-hint" data-segment-hint>Clique no seletor para escolher entre Finance e HR.</p>
+      <p class="segment-switch-hint" id="segmentHint" data-segment-hint>Abra a lista de segmento para trocar entre Finance e HR.</p>
     </div>
 
     <nav>
@@ -128,6 +132,6 @@
     </section>
   </main>
 
-  <script src="./app.js?v=20260504-segments-lineage"></script>
+  <script src="./app.js?v=20260506-fields-dropdown"></script>
 </body>
 </html>
