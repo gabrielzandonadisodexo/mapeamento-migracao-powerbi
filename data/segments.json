@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T21:27:27.102Z",
+  "generatedAt": "2026-05-06T21:41:42.079Z",
   "segments": [
     {
       "segment": "finance",
@@ -16,7 +16,7 @@
         "detailedEyebrow": "Detailed | Financas",
         "detailedTitle": "Consulta detalhada do inventario",
         "detailedLead": "Explore as linhas do inventario de Financas com filtros por relatorio, schema, status, origem e busca livre.",
-        "excelDescription": "Base consolidada em duas abas para o segmento de Financas: Tabelas com origem, schema e tabela; e Campos com uma linha por relatorio.",
+        "excelDescription": "Base consolidada em duas abas para o segmento de Financas: Tabelas com schema e tabela; e Campos com duas linhas por relatorio, separando calculados e nao calculados.",
         "pdfDescription": "Resumo executivo, metodo usado, numeros finais e pontos de revisao do mapeamento de Financas.",
         "reviewLabels": {
           "erros": "Paineis com falha ao localizar workbook ou abrir o fluxo padrao",
@@ -37,14 +37,14 @@
       },
       "files": {
         "excel": {
-          "size": 1032735,
-          "updatedAt": "06/05/2026, 18:26",
+          "size": 1050776,
+          "updatedAt": "06/05/2026, 18:41",
           "name": "output_automacao_financas.xlsx",
           "href": "./downloads/finance/output_automacao_financas.xlsx"
         },
         "pdf": {
-          "size": 113440,
-          "updatedAt": "06/05/2026, 15:42",
+          "size": 113435,
+          "updatedAt": "06/05/2026, 18:27",
           "name": "documentacao_mapeamento_dashboards_financas.pdf",
           "href": "./downloads/finance/documentacao_mapeamento_dashboards_financas.pdf"
         }
@@ -65,7 +65,7 @@
         "detailedEyebrow": "Detailed | HR",
         "detailedTitle": "Consulta detalhada do inventario",
         "detailedLead": "Explore as linhas do inventario de HR com filtros por relatorio, schema, status, origem e busca livre.",
-        "excelDescription": "Base consolidada em duas abas para o segmento de HR: Tabelas com origem, schema e tabela; e Campos com uma linha por relatorio.",
+        "excelDescription": "Base consolidada em duas abas para o segmento de HR: Tabelas com schema e tabela; e Campos com duas linhas por relatorio, separando calculados e nao calculados.",
         "pdfDescription": "Resumo executivo, metodo usado, numeros finais e pontos de revisao do mapeamento de HR.",
         "reviewLabels": {
           "erros": "Paineis com falha ao localizar workbook ou abrir o fluxo padrao",
@@ -86,14 +86,14 @@
       },
       "files": {
         "excel": {
-          "size": 224456,
-          "updatedAt": "06/05/2026, 18:26",
+          "size": 221279,
+          "updatedAt": "06/05/2026, 18:41",
           "name": "output_automacao_hr.xlsx",
           "href": "./downloads/hr/output_automacao_hr.xlsx"
         },
         "pdf": {
-          "size": 104274,
-          "updatedAt": "06/05/2026, 15:42",
+          "size": 104279,
+          "updatedAt": "06/05/2026, 18:27",
           "name": "documentacao_mapeamento_dashboards_hr.pdf",
           "href": "./downloads/hr/documentacao_mapeamento_dashboards_hr.pdf"
         }
