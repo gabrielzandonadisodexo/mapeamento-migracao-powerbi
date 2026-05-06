@@ -263,7 +263,7 @@ async function loadSegmentsCatalog() {
       const activeEntry = entries.find((entry) => entry.segment === segmentKey);
       segmentHint.textContent = activeEntry?.available === false
         ? activeEntry.error || 'Segmento indisponivel no momento.'
-        : 'Troque de segmento e mantenha a pagina atual.';
+        : 'Clique no seletor para escolher entre Finance e HR e manter a pagina atual.';
     }
   } catch {
     const fallbackEntries = [{
@@ -277,7 +277,7 @@ async function loadSegmentsCatalog() {
     syncSegmentState(fallbackEntries);
     populateSegmentSelect(fallbackEntries);
     if (segmentHint) {
-      segmentHint.textContent = 'Troque de segmento e mantenha a pagina atual.';
+      segmentHint.textContent = 'Clique no seletor para escolher entre Finance e HR e manter a pagina atual.';
     }
   }
 }

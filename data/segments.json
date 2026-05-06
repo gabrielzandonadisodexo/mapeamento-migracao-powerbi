@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T18:43:34.368Z",
+  "generatedAt": "2026-05-06T21:27:27.102Z",
   "segments": [
     {
       "segment": "finance",
@@ -16,7 +16,7 @@
         "detailedEyebrow": "Detailed | Financas",
         "detailedTitle": "Consulta detalhada do inventario",
         "detailedLead": "Explore as linhas do inventario de Financas com filtros por relatorio, schema, status, origem e busca livre.",
-        "excelDescription": "Base consolidada com relatorio, datasource, origem, campos, tipo de campo, schema e tabela para o segmento de Financas.",
+        "excelDescription": "Base consolidada em duas abas para o segmento de Financas: Tabelas com origem, schema e tabela; e Campos com uma linha por relatorio.",
         "pdfDescription": "Resumo executivo, metodo usado, numeros finais e pontos de revisao do mapeamento de Financas.",
         "reviewLabels": {
           "erros": "Paineis com falha ao localizar workbook ou abrir o fluxo padrao",
@@ -37,8 +37,8 @@
       },
       "files": {
         "excel": {
-          "size": 1758853,
-          "updatedAt": "06/05/2026, 15:42",
+          "size": 1032735,
+          "updatedAt": "06/05/2026, 18:26",
           "name": "output_automacao_financas.xlsx",
           "href": "./downloads/finance/output_automacao_financas.xlsx"
         },
@@ -65,7 +65,7 @@
         "detailedEyebrow": "Detailed | HR",
         "detailedTitle": "Consulta detalhada do inventario",
         "detailedLead": "Explore as linhas do inventario de HR com filtros por relatorio, schema, status, origem e busca livre.",
-        "excelDescription": "Base consolidada com relatorio, datasource, origem, campos, tipo de campo, schema e tabela para o segmento de HR.",
+        "excelDescription": "Base consolidada em duas abas para o segmento de HR: Tabelas com origem, schema e tabela; e Campos com uma linha por relatorio.",
         "pdfDescription": "Resumo executivo, metodo usado, numeros finais e pontos de revisao do mapeamento de HR.",
         "reviewLabels": {
           "erros": "Paineis com falha ao localizar workbook ou abrir o fluxo padrao",
@@ -86,8 +86,8 @@
       },
       "files": {
         "excel": {
-          "size": 362375,
-          "updatedAt": "06/05/2026, 15:42",
+          "size": 224456,
+          "updatedAt": "06/05/2026, 18:26",
           "name": "output_automacao_hr.xlsx",
           "href": "./downloads/hr/output_automacao_hr.xlsx"
         },

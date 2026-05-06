@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T18:43:34.359Z",
+  "generatedAt": "2026-05-06T21:27:27.090Z",
   "segment": "hr",
   "brand": "HR",
   "uiLabel": "HR",
@@ -15,8 +15,8 @@
   },
   "files": {
     "excel": {
-      "size": 362375,
-      "updatedAt": "06/05/2026, 15:42",
+      "size": 224456,
+      "updatedAt": "06/05/2026, 18:26",
       "name": "output_automacao_hr.xlsx",
       "href": "./downloads/hr/output_automacao_hr.xlsx"
     },

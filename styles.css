@@ -75,6 +75,23 @@ a {
   gap: 8px;
 }
 
+.segment-switch-control {
+  position: relative;
+}
+
+.segment-switch-control::after {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.92);
+  border-right: 2px solid rgba(255, 255, 255, 0.92);
+  content: '';
+  height: 10px;
+  pointer-events: none;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-65%) rotate(45deg);
+  width: 10px;
+}
+
 .segment-switch-label {
   color: rgba(255, 255, 255, 0.72);
   font-size: 12px;
@@ -89,10 +106,11 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: var(--radius);
   color: #ffffff;
+  cursor: pointer;
   font: inherit;
   font-weight: 700;
   min-height: 44px;
-  padding: 10px 12px;
+  padding: 10px 42px 10px 12px;
 }
 
 .segment-switch select:focus {

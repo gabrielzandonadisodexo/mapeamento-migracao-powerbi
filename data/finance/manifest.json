@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T18:43:34.267Z",
+  "generatedAt": "2026-05-06T21:27:26.801Z",
   "segment": "finance",
   "brand": "Financas",
   "uiLabel": "Finance",
@@ -15,8 +15,8 @@
   },
   "files": {
     "excel": {
-      "size": 1758853,
-      "updatedAt": "06/05/2026, 15:42",
+      "size": 1032735,
+      "updatedAt": "06/05/2026, 18:26",
       "name": "output_automacao_financas.xlsx",
       "href": "./downloads/finance/output_automacao_financas.xlsx"
     },
