@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T12:52:20.368Z",
+  "generatedAt": "2026-05-06T18:43:34.368Z",
   "segments": [
     {
       "segment": "finance",
@@ -26,25 +26,25 @@
       },
       "available": true,
       "metrics": {
-        "paineis": 167,
-        "linhas": 1711,
-        "fontes": 394,
-        "tabelas": 188,
-        "tabelasPreenchidas": 1668,
-        "erros": 33,
-        "semDatasource": 1,
-        "semTabela": 9
+        "paineis": 166,
+        "linhas": 1685,
+        "fontes": 371,
+        "tabelas": 187,
+        "tabelasPreenchidas": 1645,
+        "erros": 26,
+        "semDatasource": 2,
+        "semTabela": 12
       },
       "files": {
         "excel": {
-          "size": 903345,
-          "updatedAt": "04/05/2026, 09:52",
+          "size": 1758853,
+          "updatedAt": "06/05/2026, 15:42",
           "name": "output_automacao_financas.xlsx",
           "href": "./downloads/finance/output_automacao_financas.xlsx"
         },
         "pdf": {
-          "size": 114093,
-          "updatedAt": "04/05/2026, 09:51",
+          "size": 113440,
+          "updatedAt": "06/05/2026, 15:42",
           "name": "documentacao_mapeamento_dashboards_financas.pdf",
           "href": "./downloads/finance/documentacao_mapeamento_dashboards_financas.pdf"
         }
@@ -76,24 +76,24 @@
       "available": true,
       "metrics": {
         "paineis": 21,
-        "linhas": 370,
-        "fontes": 63,
-        "tabelas": 41,
-        "tabelasPreenchidas": 369,
-        "erros": 1,
+        "linhas": 366,
+        "fontes": 62,
+        "tabelas": 42,
+        "tabelasPreenchidas": 364,
+        "erros": 2,
         "semDatasource": 0,
         "semTabela": 0
       },
       "files": {
         "excel": {
-          "size": 209989,
-          "updatedAt": "04/05/2026, 09:52",
+          "size": 362375,
+          "updatedAt": "06/05/2026, 15:42",
           "name": "output_automacao_hr.xlsx",
           "href": "./downloads/hr/output_automacao_hr.xlsx"
         },
         "pdf": {
-          "size": 104531,
-          "updatedAt": "04/05/2026, 09:51",
+          "size": 104274,
+          "updatedAt": "06/05/2026, 15:42",
           "name": "documentacao_mapeamento_dashboards_hr.pdf",
           "href": "./downloads/hr/documentacao_mapeamento_dashboards_hr.pdf"
         }

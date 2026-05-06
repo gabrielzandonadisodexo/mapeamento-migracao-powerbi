@@ -1,58 +1,58 @@
 {
-  "generatedAt": "2026-05-04T12:52:20.353Z",
+  "generatedAt": "2026-05-06T18:43:34.357Z",
   "summary": {
     "paineis": 21,
-    "linhas": 370,
-    "fontes": 63,
-    "tabelas": 41,
-    "tabelasPreenchidas": 369,
-    "erros": 1,
+    "linhas": 366,
+    "fontes": 62,
+    "tabelas": 42,
+    "tabelasPreenchidas": 364,
+    "erros": 2,
     "semDatasource": 0,
     "semTabela": 0,
-    "linhasSemTabela": 1,
-    "coberturaTabelaPct": 99.7,
-    "relatoriosComPendencia": 1,
-    "fontesComPendencia": 1
+    "linhasSemTabela": 2,
+    "coberturaTabelaPct": 99.5,
+    "relatoriosComPendencia": 2,
+    "fontesComPendencia": 2
   },
   "charts": {
     "status": [
       {
         "name": "Mapeado",
-        "value": 369
+        "value": 364
       },
       {
         "name": "Erro no workbook",
-        "value": 1
+        "value": 2
       }
     ],
     "topSchemas": [
       {
         "name": "Sem schema",
-        "value": 232
+        "value": 234
       },
       {
         "name": "DPESSOAL",
-        "value": 40
+        "value": 38
       },
       {
         "name": "bicompras",
-        "value": 21
+        "value": 20
       },
       {
         "name": "ciscorp",
-        "value": 19
+        "value": 18
       },
       {
         "name": "portalbi",
-        "value": 19
+        "value": 18
       },
       {
         "name": "bisilver",
-        "value": 17
+        "value": 16
       },
       {
         "name": "dpessoal",
-        "value": 17
+        "value": 16
       },
       {
         "name": "PORTALBI",
@@ -62,7 +62,7 @@
     "topTables": [
       {
         "name": "D_COLABORADOR",
-        "value": 30
+        "value": 29
       },
       {
         "name": "D_COLABORADOR_NVL_CLR_COLUNAR",
@@ -70,43 +70,43 @@
       },
       {
         "name": "D_COLABORADOR_EXPURGO_ROTATIVIDADE",
-        "value": 21
+        "value": 20
       },
       {
         "name": "F_COLABORADOR_FOLHA",
-        "value": 21
+        "value": 20
       },
       {
         "name": "F_COLABORADOR_FOLHA_SAL",
-        "value": 21
+        "value": 20
       },
       {
         "name": "bicompras.d_filial",
-        "value": 19
+        "value": 18
       },
       {
         "name": "ciscorp.filial",
-        "value": 19
+        "value": 18
       },
       {
         "name": "portalbi.filial_complemento@tecnisaw",
-        "value": 19
+        "value": 18
       },
       {
         "name": "bisilver.vw_estrutra_gerencial",
-        "value": 17
+        "value": 16
       },
       {
         "name": "DPESSOAL.F_APDATA_ABERTURA_VAGA_STEP",
-        "value": 17
+        "value": 16
       },
       {
         "name": "dpessoal.F_COLABORADOR_FOLHA",
-        "value": 17
+        "value": 16
       },
       {
         "name": "DPESSOAL.VW_D_COLABORADOR_GRADE",
-        "value": 17
+        "value": 16
       }
     ],
     "topReportsByLines": [
@@ -137,9 +137,9 @@
       {
         "relatorio": "Base de Dados Modelo de Trabalho - Home Office",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/BasedeDadosModelodeTrabalho-HomeOffice/BASEOFICIALPARATABLEAU",
-        "linhas": 28,
-        "fontes": 5,
-        "tabelas": 15,
+        "linhas": 37,
+        "fontes": 6,
+        "tabelas": 16,
         "pendencias": 0
       },
       {
@@ -153,8 +153,8 @@
       {
         "relatorio": "Indicadores DE&I",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/IndicadoresDEI/TurnoverAbsentesmoHorasExtrasPcD",
-        "linhas": 20,
-        "fontes": 4,
+        "linhas": 15,
+        "fontes": 3,
         "tabelas": 15,
         "pendencias": 0
       },
@@ -185,8 +185,8 @@
       {
         "relatorio": "Pin People On e Off",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/PinPeopleOneOff/PinPeople",
-        "linhas": 11,
-        "fontes": 3,
+        "linhas": 9,
+        "fontes": 2,
         "tabelas": 9,
         "pendencias": 0
       },
@@ -279,15 +279,15 @@
         "pendencias": 0
       },
       {
-        "datasource": "DE-PARA_BU",
-        "relatorio": "Wokforce Planning",
+        "datasource": "Base_Catracas",
+        "relatorio": "Base de Dados Modelo de Trabalho - Home Office",
         "linhas": 7,
         "tabelas": 7,
         "pendencias": 0
       },
       {
-        "datasource": "Elegiveis cota aprendiz (Tableau)",
-        "relatorio": "Wokforce Planning",
+        "datasource": "Base_Tableau",
+        "relatorio": "Base de Dados Modelo de Trabalho - Home Office",
         "linhas": 7,
         "tabelas": 7,
         "pendencias": 0
@@ -297,6 +297,14 @@
       {
         "relatorio": "Metas Turnover FY26 - Regrettable e Demissional",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/MetasTurnoverFY26-RegrettableeDemissional/MetasdeRHFY26",
+        "linhas": 1,
+        "fontes": 0,
+        "tabelas": 0,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Women Leadership",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/WomenLeadership/IndicadoresWomenLeadership",
         "linhas": 1,
         "fontes": 0,
         "tabelas": 0,

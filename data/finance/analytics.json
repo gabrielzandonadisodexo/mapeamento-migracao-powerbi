@@ -1,58 +1,58 @@
 {
-  "generatedAt": "2026-05-04T12:52:20.285Z",
+  "generatedAt": "2026-05-06T18:43:34.259Z",
   "summary": {
-    "paineis": 167,
-    "linhas": 1711,
-    "fontes": 394,
-    "tabelas": 188,
-    "tabelasPreenchidas": 1668,
-    "erros": 33,
-    "semDatasource": 1,
-    "semTabela": 9,
-    "linhasSemTabela": 43,
-    "coberturaTabelaPct": 97.5,
-    "relatoriosComPendencia": 43,
-    "fontesComPendencia": 43
+    "paineis": 166,
+    "linhas": 1685,
+    "fontes": 371,
+    "tabelas": 187,
+    "tabelasPreenchidas": 1645,
+    "erros": 26,
+    "semDatasource": 2,
+    "semTabela": 12,
+    "linhasSemTabela": 40,
+    "coberturaTabelaPct": 97.6,
+    "relatoriosComPendencia": 40,
+    "fontesComPendencia": 40
   },
   "charts": {
     "status": [
       {
         "name": "Mapeado",
-        "value": 1668
+        "value": 1645
       },
       {
         "name": "Erro no workbook",
-        "value": 33
+        "value": 26
       },
       {
         "name": "Sem tabela identificada",
-        "value": 9
+        "value": 12
       },
       {
         "name": "Sem datasource",
-        "value": 1
+        "value": 2
       }
     ],
     "topSchemas": [
       {
         "name": "Sem schema",
-        "value": 1337
+        "value": 1304
       },
       {
         "name": "bicompras",
-        "value": 43
+        "value": 44
       },
       {
         "name": "PORTALBI",
-        "value": 40
+        "value": 41
       },
       {
         "name": "BICOMPRAS",
-        "value": 39
+        "value": 40
       },
       {
         "name": "DPESSOAL",
-        "value": 34
+        "value": 36
       },
       {
         "name": "NL",
@@ -64,23 +64,23 @@
       },
       {
         "name": "ciscorp",
-        "value": 23
+        "value": 24
       },
       {
         "name": "bisilver",
-        "value": 17
+        "value": 18
       },
       {
         "name": "dpessoal",
-        "value": 17
+        "value": 18
       },
       {
         "name": "portalbi",
-        "value": 17
+        "value": 18
       },
       {
         "name": "BISTGBRONZE",
-        "value": 8
+        "value": 9
       }
     ],
     "topTables": [
@@ -94,11 +94,11 @@
       },
       {
         "name": "FILIAL_COMPLEMENTO",
-        "value": 143
+        "value": 146
       },
       {
         "name": "VW_FILIAL",
-        "value": 91
+        "value": 92
       },
       {
         "name": "BI_FEC_CONTABIL_LINHA",
@@ -106,30 +106,30 @@
       },
       {
         "name": "VW_D_FILIAL",
-        "value": 46
+        "value": 51
       },
       {
         "name": "BICOMPRAS.d_filial_complemento@SDXLOGIS",
-        "value": 31
-      },
-      {
-        "name": "f_xml_item",
-        "value": 31
+        "value": 32
       },
       {
         "name": "Planilha1",
         "value": 29
       },
       {
+        "name": "f_xml_item",
+        "value": 28
+      },
+      {
         "name": "F_XMLNF_HEADER",
+        "value": 25
+      },
+      {
+        "name": "ciscorp.filial",
         "value": 24
       },
       {
         "name": "BI_FEC_CONTABIL_CONTA",
-        "value": 23
-      },
-      {
-        "name": "ciscorp.filial",
         "value": 23
       }
     ],
@@ -151,50 +151,18 @@
         "pendencias": 0
       },
       {
-        "relatorio": "Base ordem de compras consumo",
-        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Baseordemdecompras_16860831706610/Baseordemdecompras",
-        "linhas": 47,
-        "fontes": 7,
-        "tabelas": 27,
-        "pendencias": 0
-      },
-      {
         "relatorio": "Resultado financeiro - Grupo econômico análise pessoal %",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Resultadofinanceiro-Grupoeconmicoanlisepessoal_17392198009060/Anlisepessoalporservio",
         "linhas": 47,
-        "fontes": 9,
+        "fontes": 8,
         "tabelas": 18,
-        "pendencias": 0
-      },
-      {
-        "relatorio": "Base ordem de compras",
-        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Baseordemdecompras_16860831929220/Baseordemdecompras",
-        "linhas": 42,
-        "fontes": 7,
-        "tabelas": 26,
-        "pendencias": 0
-      },
-      {
-        "relatorio": "Base ordem de compras completa",
-        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Baseordemdecomprascompleta/Baseordemdecompras",
-        "linhas": 42,
-        "fontes": 7,
-        "tabelas": 26,
-        "pendencias": 0
-      },
-      {
-        "relatorio": "Custo Target",
-        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Target_17115510333040/Custotarget",
-        "linhas": 42,
-        "fontes": 6,
-        "tabelas": 15,
         "pendencias": 0
       },
       {
         "relatorio": "Resultado financeiro - conta a conta por cl",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Resultadofinanceiro-contaacontaporcl/9-ContaacontaSAP",
         "linhas": 39,
-        "fontes": 7,
+        "fontes": 6,
         "tabelas": 20,
         "pendencias": 0
       },
@@ -202,7 +170,7 @@
         "relatorio": "Resultado financeiro - Grupo econômico",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Resultadofinanceiro-Grupoeconmico/2-FateGPSAP",
         "linhas": 39,
-        "fontes": 7,
+        "fontes": 6,
         "tabelas": 20,
         "pendencias": 0
       },
@@ -218,7 +186,15 @@
         "relatorio": "Resultado financeiro - SG&A",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Resultadofinanceiro-Grupoeconmico_17320354393150/Colaboradoresativoseafastados",
         "linhas": 37,
-        "fontes": 7,
+        "fontes": 6,
+        "tabelas": 19,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Resultado financeiro - SG&A Teste budget",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Resultadofinanceiro-SGATestebudget/ResultadoSGA",
+        "linhas": 37,
+        "fontes": 6,
         "tabelas": 19,
         "pendencias": 0
       },
@@ -226,8 +202,32 @@
         "relatorio": "Resultado financeiro - Trimestre",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Resultadofinanceiro-Trimestre/ResultadoSAPFateGP",
         "linhas": 37,
-        "fontes": 7,
+        "fontes": 6,
         "tabelas": 19,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Retenção FY26",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/RetenoFY26/KPIRetenoClientes",
+        "linhas": 34,
+        "fontes": 7,
+        "tabelas": 6,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "Indicadores Fiscais",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Indicadorescontasdeimpostos/5-BaseporCL",
+        "linhas": 33,
+        "fontes": 6,
+        "tabelas": 18,
+        "pendencias": 0
+      },
+      {
+        "relatorio": "FI01 - Mapa Fiscal - Extração - V12",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/FI01-MapaFiscal-Extrao-V11/Painel-MapaFiscalporUF",
+        "linhas": 32,
+        "fontes": 4,
+        "tabelas": 8,
         "pendencias": 0
       }
     ],
@@ -261,21 +261,21 @@
         "pendencias": 0
       },
       {
-        "datasource": "BICOMPRAS - Valor Ordem Compra Prevista - Detalhada por Fornecedor",
+        "datasource": "BICOMPRAS - PONTO A PONTO",
         "relatorio": "Base ordem de compras completa",
         "linhas": 16,
         "tabelas": 16,
         "pendencias": 0
       },
       {
-        "datasource": "BICOMPRAS - Valor Ordem Compra Prevista - Detalhada por Fornecedor",
+        "datasource": "BICOMPRAS - PONTO A PONTO",
         "relatorio": "Base ordem de compras",
         "linhas": 16,
         "tabelas": 16,
         "pendencias": 0
       },
       {
-        "datasource": "BICOMPRAS - Valor Ordem Compra Prevista - Detalhada por Fornecedor",
+        "datasource": "BICOMPRAS - PONTO A PONTO",
         "relatorio": "Base ordem de compras consumo",
         "linhas": 16,
         "tabelas": 16,
@@ -319,6 +319,30 @@
     ],
     "reportsWithIssues": [
       {
+        "relatorio": "Campanha de incentivo GU Q1 FY26",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/CampanhadeincentivoGUQ1/CampanhadeincentivoGU",
+        "linhas": 20,
+        "fontes": 4,
+        "tabelas": 14,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "Notas emitidas x lançadas BRF e Ecolab",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/NotasemitidasxlanadasBRFeEcolab/PainelNF",
+        "linhas": 5,
+        "fontes": 2,
+        "tabelas": 4,
+        "pendencias": 1
+      },
+      {
+        "relatorio": "VD51",
+        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/VD51/VD51",
+        "linhas": 4,
+        "fontes": 3,
+        "tabelas": 2,
+        "pendencias": 1
+      },
+      {
         "relatorio": "ADH07 - CD-PAP",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/ADH07-CD-PAP/ADH7-CD-PAP",
         "linhas": 1,
@@ -337,14 +361,6 @@
       {
         "relatorio": "Análise de resultado - Mapa Cidade",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/Anlisederesultado-MapaCidade/Anlisedefaturamento-mapa",
-        "linhas": 1,
-        "fontes": 0,
-        "tabelas": 0,
-        "pendencias": 1
-      },
-      {
-        "relatorio": "Análise NR Evento",
-        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnliseNREvento/AnliseNREvento",
         "linhas": 1,
         "fontes": 0,
         "tabelas": 0,
@@ -393,22 +409,6 @@
       {
         "relatorio": "Análise Prévia Consumo Média PAP - Novembro 25",
         "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisePrviaConsumoMdiaPAP-Novembro25/Anliseprviaconsumo",
-        "linhas": 1,
-        "fontes": 0,
-        "tabelas": 0,
-        "pendencias": 1
-      },
-      {
-        "relatorio": "Análise Prévia Consumo Média PAP - Outubro 25",
-        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisePrviaConsumoMdiaPAP-Outubro25/Anliseprviaconsumo",
-        "linhas": 1,
-        "fontes": 0,
-        "tabelas": 0,
-        "pendencias": 1
-      },
-      {
-        "relatorio": "Análise Prévia Consumo Novembro 2025",
-        "link_relatorio": "https://analyticsbi.sodexo.com.br/#/views/AnlisePrviaConsumoNovembro2025/AnlisePrviadoConsumo",
         "linhas": 1,
         "fontes": 0,
         "tabelas": 0,
